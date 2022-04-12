@@ -1,0 +1,234 @@
+.botones {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin:0;
+    padding:0;
+    position: fixed;
+    width:100%;
+    z-index: 2;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 20, 0.182);
+    transition: 2s;
+}
+
+.botonesarriba{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin:0;
+    padding:0;
+    position: fixed;
+    width:100%;
+    z-index: 2;
+    flex-wrap: wrap;
+    transition: 2s;
+    background: rgba(0, 0, 20, 0.95);
+
+}
+
+.boton{
+    border: none;
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
+.botonera{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    right: 0;
+    justify-content: space-evenly;
+}
+.boton{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.boton::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(248, 248, 248);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.9s;
+}
+.boton:hover{
+    color: rgb(248, 248, 248);
+}
+.boton:hover::after{
+    width: 100%;
+}
+.botonera2, .botonera3{
+    display: none;
+}
+
+.fin{
+    border-bottom: solid  rgb(175, 175, 175) 1px;
+    display: flex;
+    width: 40%;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 650px){
+    .botones2{
+        height: 100%;
+        margin-top: 70px;
+        background-color: rgb(0,0,20);
+    }
+    .botones1 {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        margin:0;
+        padding:0;
+        position: fixed;
+        width:100%;
+        z-index: 2;
+        flex-wrap: wrap;
+        transition: 2s;
+    }
+    .botonera{
+        display: none;
+    }
+
+    .botonera3{
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 20, 0.95);
+        color:rgb(248, 248, 248);
+        width:100%;
+        height: 70px;
+        transition: 2s;
+        position:fixed;
+        justify-content: flex-end;
+    }
+    .burger{
+        justify-content: flex-end;
+        font-size: 30px;
+        align-items: center;
+        transition:2s;
+        z-index: 2px;
+        padding-right: 20px;
+    }
+    .containerBurger{
+        background: rgba(4, 4, 239, 0.952);
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top:0px;
+        width: 100%;
+        position:fixed;
+    
+    }
+    .botonBurger{
+        margin-top: 50px;
+        color: rgb(175, 175, 175);
+       
+
+    }
+    .botonBurger:hover{
+        color: rgb(248, 248, 248);
+    }
+    .wpp:hover{
+        color: rgb(248, 248, 248);
+    }
+    .instagram:hover{
+        color: rgb(248, 248, 248);
+    }
+    .github:hover{
+        color: rgb(248, 248, 248);
+    }
+    .linkedin:hover{
+        color: rgb(248, 248, 248);
+    }
+    .redes{
+        width: 100%;
+        display: flex;
+        padding-top:60px;
+        justify-content: center;
+    }
+    .wpp{
+        font-size: 23px;
+        padding: 8px;
+        color: rgb(175, 175, 175);
+        display:flex;
+        align-items:center; 
+        margin-bottom: 10px;
+    }
+    .a2{
+        padding: 5px;
+        border-radius:50%;
+        text-decoration: none;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .github{
+        font-size: 23px;
+        padding: 5px;
+        color: rgb(175, 175, 175);
+        display:flex;
+        align-items:center; 
+    }
+    .linkedin{
+        font-size: 23px;
+        padding: 5px;
+        color: rgb(175, 175, 175);
+        display:flex;
+        align-items:center; 
+    }
+    .instagram{
+        font-size: 23px;
+        padding: 5px;
+        color: rgb(175, 175, 175);
+        display:flex;
+        align-items:center; 
+    }
+    .x{
+        color: aliceblue;
+        z-index: 2;
+    }
+    .botonera2{
+        display: flex;
+        align-items: center;
+        background: rgba(0, 0, 247, 0.474);
+        color:rgb(248, 248, 248);
+        width:100%;
+        height: 70px;
+        position:fixed;
+        justify-content: flex-end;
+        transition: 2s;
+    }
+
+    @media screen and (max-width: 460px){
+        .botonera2{
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 247, 0.474);
+            color:rgb(248, 248, 248);
+            width:100%;
+            height: 70px;
+            position:fixed;
+            justify-content: flex-end;
+            transition: 2s;
+        }
+        .containerBurger{
+            background: rgba(4, 4, 239, 0.952);
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top:0px;
+            width: 100%;
+            position:fixed;
+        
+        }
+    }
+}

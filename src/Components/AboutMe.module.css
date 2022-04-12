@@ -1,0 +1,92 @@
+.home{
+    width:100%;
+    padding-top: 70px;
+}
+
+.container{
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    width:100%;
+}
+.arriba{
+    width: 100%;
+    margin:0px;
+}
+.wrapper{
+    padding: 0px;
+    width: 100%;
+    margin-bottom:20px
+}
+.wrapper1{
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.parrafo{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.parrafo2{
+    width: 60%;
+    line-height: 2rem;
+    font-size: 16px;
+    margin: 0 ;
+    text-indent: 5px;
+    color:rgb(95, 95, 95);
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.titulo1{
+    color: rgb(0,0,60);
+    font-size: 20px;
+    width: 100%;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    padding:40px;
+}
+.titulo2{
+    color: rgb(0,0,60);
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    padding:40px;
+    display:flex;
+    justify-content:center;
+}
+
+.education{
+    padding:0px;
+    margin: 0px;
+}
+.foto{
+    border-radius: 50%;
+    height: 300px;
+    background-color: rgb(169, 154, 230);
+    align-items: center;
+    }
+
+
+
+@media screen and (max-width: 412px){
+    .container{
+        padding:20px;
+    }
+    .parrafo2{
+        font-size: 12px;
+        width: 90%;
+        line-height: 1.6rem;
+    }
+}
