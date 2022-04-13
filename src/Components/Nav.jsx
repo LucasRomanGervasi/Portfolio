@@ -46,7 +46,7 @@ export default function Nav(){
                     </div>
                    
                     <div className={styles.redes}>
-                    <a className={styles.a2} href="https://api.whatsapp.com/send?phone=+5491168020511&amp;text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20work!">
+                    <a className={styles.a2} href="https://api.whatsapp.com/send?phone=+5491168020511&amp;text=Hola%2C%20Lucas%20me%20gustaría%20saber%20más%20sobre%20tu%20trabajo!">
                     <span className={styles.wpp}><BsWhatsapp/></span></a>
                     <a  className={styles.a2} href='https://github.com/LucasRomanGervasi'> <span className={styles.github}><BsGithub/></span> </a>
                     <a  className={styles.a2} href='https://www.linkedin.com/in/lucas-roman-gervasi-419463200/'> <span className={styles.linkedin}><FaLinkedinIn/></span> </a>
