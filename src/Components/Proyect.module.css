@@ -55,7 +55,6 @@
     border-radius: 10px;
     margin-left: 0px;
     margin-right:0px;
-    height: 400px;
 }
 .containerFood .foodAppFront{
     justify-content: center;
@@ -83,7 +82,7 @@
     transform: perspective(500px) rotateY(180deg)
 }
 .containerFood:hover .foodAppBack{
-    z-index: inherit;
+    z-index: 0;
     transform: perspective(500px) rotateY(360deg)
 }
 .parrafo2{
