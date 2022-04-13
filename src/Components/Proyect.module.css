@@ -181,7 +181,6 @@
     }
     .containerFood:hover .foodAppBack{
         z-index: 0;
-        position: absolute;
         transform: perspective(500px) rotateY(360deg)
     }
     .parrafo2{
