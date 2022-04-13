@@ -58,17 +58,20 @@
     height: 300px;
 }
 .containerFood .foodAppFront{
+    width: 280px;
     background-color: rgb(15, 20, 78);
     transform: perspective(500px) rotateY(0deg)
     
 }
 .containerFood:hover .foodAppFront{
+    width: 280px;
     transform: perspective(500px) rotateY(180deg);
 }
 .containerFood .foodAppBack{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 280px;
     flex-direction: column;
     padding: 20px;
       background-color: rgb(223, 223, 223);
