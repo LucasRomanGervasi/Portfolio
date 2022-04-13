@@ -9,13 +9,15 @@
  pointer-events: none;
 }
 
-
+.Nav{
+  z-index: 40;
+}
 .no{
   display: none
 }
 .proyect{
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 }
 .btn{
   font-size: 35px;
