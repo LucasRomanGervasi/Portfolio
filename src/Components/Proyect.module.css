@@ -142,7 +142,7 @@
         display: none;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     .containerFood div {
         width: 280px;
         height:290px;
