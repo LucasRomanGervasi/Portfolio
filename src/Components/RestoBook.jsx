@@ -19,10 +19,11 @@ export default function RestoBook(){
             <h1 className={styles.descripcion}>DESCRIPCIÓN</h1>
             <div className={styles.parrafo}>
             <p className={styles.parrafo2}>
-            Con un grupo de 7 desarrolladores, creamos una app movil llamada Resto Book. La idea de la app es reducir el tiempo para ir a un restaurant.
-            Como usuario podes buscar los restaurant, ordenarlos, filtrarlos, ver el menu y hacer una reserva en el mismo a traves de Mercado Pago. 
-            Como restaurant podes adminstrarla desde la app, modificando el horario de reserva, el precio, agregar o eliminar comidas, y tambien ver sus estadisticas.
-            </p>
+            Con un grupo de 7 desarrolladores, creamos una app movil llamada Resto Book. La idea de la app es reducir el 
+             tiempo para reservar e ir a un restaurant.
+             Como usuario podes buscar los restaurant, ordenarlos, filtrarlos, ver el menu y 
+             hacer una reserva en el mismo a traves de Mercado Pago. Como restaurant podes adminstrarla desde la app, modificando el horario de reserva, 
+             el precio, agregar o eliminar comidas, y tambien ver sus estadisticas.</p>
             </div>
             </div>
             <div className={styles.imgRestoApp}>

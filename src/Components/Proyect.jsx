@@ -38,7 +38,7 @@ export default function Proyect(){
         <div className={styles.foodAppBack}>
         <h1 className={styles.titulo2}>¿De que se trata?</h1>
             <p className={styles.parrafo2}>Con un grupo de 7 desarrolladores, creamos una app movil llamada Resto Book. La idea de la app es reducir el 
-             de tiempo para ir a un restaurant.
+             tiempo para reservar e ir a un restaurant.
              Como usuario podes buscar los restaurant, ordenarlos, filtrarlos, ver el menu y 
              hacer una reserva en el mismo a traves de Mercado Pago. Como restaurant podes adminstrarla desde la app, modificando el horario de reserva, 
              el precio, agregar o eliminar comidas, y tambien ver sus estadisticas.</p>
