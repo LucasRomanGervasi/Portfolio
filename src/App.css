@@ -28,7 +28,6 @@
   padding: 6px;
   z-index: 1;
   display: flex;
-  margin:10px;
   position: fixed;
   justify-content: right;
 }
@@ -55,6 +54,7 @@
 
 @media screen and (max-width: 460px){
   .btn{
+    margin-bottom:15px;
     font-size: 30px;
   }
   }
