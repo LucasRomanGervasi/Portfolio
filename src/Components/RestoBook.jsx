@@ -44,7 +44,7 @@ export default function RestoBook(){
            < div className={styles.tecnologiascontainer2}><h1 className={styles.titulo2}>BACK END</h1>
             <h2 className={styles.tecnologias}> <span className={styles.firebase}><SiFirebase/></span> Firebase </h2>
             </div>
-            < div className={styles.tecnologiascontainer2}><h1 className={styles.titulo2}>OTRAS HERRAMIENTAS</h1>
+            < div className={styles.tecnologiascontainer2}><h1 className={styles.titulo2}>OTRAS </h1>
             <h2 className={styles.tecnologias}> <span className={styles.git}><DiGit/></span>GIT </h2>
             <h2 className={styles.tecnologias}><span className={styles.trello}><FaTrello/></span> Trello </h2>
             </div>
