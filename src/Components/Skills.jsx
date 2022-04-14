@@ -7,7 +7,7 @@ import { FaTrello } from "react-icons/fa";
 export default function Skills(){
     return(
          <div className={styles.abajo}>
-         <h2 className={styles.titulo2}> TECNOLOGÍAS</h2>
+         <h2 className={styles.titulo2}> HABILIDADES</h2>
              <div className={styles.skills}>
         <div className={styles.container}>
             <div className={styles.frontend}> 
@@ -30,7 +30,7 @@ export default function Skills(){
             <h2 className={styles.tecnologias}> <span className={styles.javascript}><SiJavascript/></span> Javascript </h2>
             </div>
             <div className={styles.otros}>
-            <h1 className={styles.titulo1}>OTRAS HERRAMIENTAS</h1>
+            <h1 className={styles.titulo1}>OTRAS</h1>
             <h2 className={styles.tecnologias}> <span className={styles.git}><DiGit/></span>GIT </h2>
             <h2 className={styles.tecnologias}><span className={styles.trello}><FaTrello/></span> Trello </h2>
             <h2 className={styles.tecnologias}>    Metodología AGILE SCRUM </h2>

@@ -19,11 +19,9 @@ export default function RestoBook(){
             <h1 className={styles.descripcion}>DESCRIPCIÓN</h1>
             <div className={styles.parrafo}>
             <p className={styles.parrafo2}>
-            Con un grupo de 7 desarrolladores, creamos una app movil llamada Resto Book. La idea de la app es reducir el 
-             de tiempo para ir a un restaurant.
-             Como usuario podes buscar los restaurant, ordenarlos, filtrarlos, ver el menu y 
-             hacer una reserva en el mismo a traves de Mercado Pago. Como restaurant podes adminstrarla desde la app, modificando el horario de reserva, 
-             el precio, agregar o eliminar comidas, y tambien ver sus estadisticas.
+            Con un grupo de 7 desarrolladores, creamos una app movil llamada Resto Book. La idea de la app es reducir el tiempo para ir a un restaurant.
+            Como usuario podes buscar los restaurant, ordenarlos, filtrarlos, ver el menu y hacer una reserva en el mismo a traves de Mercado Pago. 
+            Como restaurant podes adminstrarla desde la app, modificando el horario de reserva, el precio, agregar o eliminar comidas, y tambien ver sus estadisticas.
             </p>
             </div>
             </div>
@@ -48,7 +46,6 @@ export default function RestoBook(){
             < div className={styles.tecnologiascontainer2}><h1 className={styles.titulo2}>OTRAS HERRAMIENTAS</h1>
             <h2 className={styles.tecnologias}> <span className={styles.git}><DiGit/></span>GIT </h2>
             <h2 className={styles.tecnologias}><span className={styles.trello}><FaTrello/></span> Trello </h2>
-            <h2 className={styles.tecnologias}> Metodología AGILE SCRUM </h2>
             </div>
             </div>
             </div> 

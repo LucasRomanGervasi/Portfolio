@@ -26,7 +26,7 @@ export default function Nav(){
         <div className={  nav ? styles.botones : styles.botonesarriba}>
                 <div className={styles.botonera}>
                     <a className={styles.boton} href="#aboutMe">SOBRE MI</a>
-                    <a className={styles.boton} href="#tecnologias">TECNOLOGÍAS </a>
+                    <a className={styles.boton} href="#tecnologias">HABILIDADES </a>
                     <a className={styles.boton} href="#proyect">PROYECTOS</a>
                     <a className={styles.boton} href="#contacts">CONTACTO </a>
                 </div>
@@ -38,7 +38,7 @@ export default function Nav(){
                 <div className={styles.botones2}>
                 <div className={styles.containerBurger}>
                 <a className={styles.botonBurger} onClick={() => setSohwMobileBurger(!showMobileBurger)} href="#aboutMe">SOBRE MI</a>
-                    <a className={styles.botonBurger} onClick={() => setSohwMobileBurger(!showMobileBurger)} href="#tecnologias">TECNOLOGÍAS </a>
+                    <a className={styles.botonBurger} onClick={() => setSohwMobileBurger(!showMobileBurger)} href="#tecnologias">HABILIDADES </a>
                     <a className={styles.botonBurger} onClick={() => setSohwMobileBurger(!showMobileBurger)} href="#proyect">PROYECTOS</a>
                     <a className={styles.botonBurger} onClick={() => setSohwMobileBurger(!showMobileBurger)} href="#contacts">CONTACTO </a>
                     
