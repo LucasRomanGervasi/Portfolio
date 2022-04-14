@@ -28,6 +28,7 @@
   padding: 6px;
   z-index: 1;
   display: flex;
+  margin:10px;
   position: fixed;
   justify-content: right;
 }
