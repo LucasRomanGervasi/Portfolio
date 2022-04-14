@@ -21,7 +21,7 @@ export default function RestoBook(){
             <p className={styles.parrafo2}>
             Con un grupo de 7 desarrolladores, creamos una app movil llamada Resto Book. La idea de la app es reducir el 
              de tiempo para ir a un restaurant.
-             Como usuario podes buscar los restaurant que vos quieras, ordenarlos, filtrarlos, ver la carta y 
+             Como usuario podes buscar los restaurant, ordenarlos, filtrarlos, ver el menu y 
              hacer una reserva en el mismo a traves de Mercado Pago. Como restaurant podes adminstrarla desde la app, modificando el horario de reserva, 
              el precio, agregar o eliminar comidas, y tambien ver sus estadisticas.
             </p>
