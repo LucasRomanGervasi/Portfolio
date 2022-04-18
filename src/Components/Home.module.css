@@ -148,7 +148,7 @@
     }
 }
 
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 850px){
     .right{
         display: none;
     }
@@ -159,8 +159,9 @@
         width: 100%;
         height: 100%
     }
-
 }
+
+
 @media screen and (max-width: 460px){
     .home{
         background: url("../img/fondomobile.jpg");
