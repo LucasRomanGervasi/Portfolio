@@ -17,6 +17,15 @@ export default function Proyect(){
           >
           </img>
         </div>
+        <div className={styles.foodAppMobile}>
+          <h1 className={styles.titulo1}>Today's Menu</h1>
+          <img
+          className={styles.foodImg}
+          src={foodApp}
+          >
+          </img>
+          <a className={styles.boton} href="/TodaysMenu">Ver más</a>
+        </div>
         <div className={styles.foodAppBack}>
         <h1 className={styles.titulo2}>¿De que se trata?</h1>
             <p className={styles.parrafo2}>
@@ -34,6 +43,15 @@ export default function Proyect(){
           src={restoBook}
           >
           </img>
+        </div>
+        <div className={styles.foodAppMobile}>
+          <h1 className={styles.titulo1}>Resto Book</h1>
+          <img
+          className={styles.foodImg}
+          src={restoBook}
+          >
+          </img>
+          <a className={styles.boton} href="/RestoBook">Ver más</a>
         </div>
         <div className={styles.foodAppBack}>
         <h1 className={styles.titulo2}>¿De que se trata?</h1>
