@@ -16,7 +16,7 @@ export default function Home(){
                  {/* <h2 className={styles.titulo2}> Tengo 20 años, soy Argentino y Desarrollador Web Front End</h2> */}
                 </div>
                  <div className={styles.wrapper1}>
-                    <a  className={styles.a} href='https://drive.google.com/file/d/1UQANF-LJEhHSllj2nB8Y7p94iCdpALbe/view'>DESCARGAR CV </a>
+                    <a  className={styles.a} href='https://drive.google.com/file/d/1UQANF-LJEhHSllj2nB8Y7p94iCdpALbe/view?usp=sharing'>DESCARGAR CV </a>
                     {/* <span className={styles.cv}> <FiDownload/></span> */}
                     </div>
                 </div>
