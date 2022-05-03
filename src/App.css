@@ -1,20 +1,19 @@
 .App{
   margin:0px;
   width:100%;
+  transition: 0.9s;
 }
 
 .App2{
+  transition: 0.9s;
   background-color: rgb(8, 12, 48);
 }
 
 .App2 h2{
-  color: antiquewhite;
+  color: aliceblue;
 }
 .App2 p{
-  color: antiquewhite;
-}
-.App2 a{
-  color: antiquewhite;
+  color: aliceblue;
 }
 
 
@@ -33,6 +32,7 @@
   position: absolute;
   z-index: 0;
 }
+
 .btn{
   font-size: 35px;
   border-radius: 50% ;
@@ -51,9 +51,7 @@
   color: rgb(4, 4, 112);
 }
 @media screen and (max-width: 600px){
-  .containerbtn{
-    margin-bottom: 100px;
-  }
+
 }
 .linea{
   background-color:  rgb(0, 0, 255) ;
@@ -164,7 +162,7 @@ a{
 }
 
 input:checked + .slider {
-  background-color: #19a2c1;
+  background-color: #1924c1;
 }
 
 input:focus + .slider {

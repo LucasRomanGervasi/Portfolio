@@ -20,6 +20,13 @@
     display:flex;
     flex-wrap: wrap;
 }
+.container2{
+    background-color: rgb(14, 9, 34);
+    height: 100%;
+    padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
+}
 .titulo1{
     color: rgb(0, 0, 10);
     font-size: 15px;

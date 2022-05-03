@@ -28,11 +28,14 @@ import {useSelector} from "react-redux"
    });
   return (
     <div className={ darkMode ? "App2" : "App"}>
-    <div   className="Nav"> <Nav/> </div>
+    <div className="Nav"> <Nav/> </div>
     <div className='Reading'><ReadingProgress/></div>
     <div className="Home" id="home">    <Home/> </div>
     <div className={btn ? 'no' : 'containerbtn'}>
-      <a className='btn' href="#home"><BiArrowFromBottom/></a>
+      <a  href="#home"> <span
+      className="btn">
+      <BiArrowFromBottom/> 
+        </span></a>
     </div>
     <div className="About" id="aboutMe"> <AboutMe/> </div>
     <div className="Skills" id="tecnologias"> <Skills/> </div>
