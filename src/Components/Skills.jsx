@@ -3,8 +3,10 @@ import styles from "./Skills.module.css";
 import { DiNodejsSmall, DiGit, DiHtml5, DiCss3, DiReact} from "react-icons/di";
 import { SiRedux, SiFirebase,SiPostgresql, SiJavascript } from "react-icons/si";
 import { FaTrello } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 export default function Skills(){
+    const darkMode = useSelector(state => state.darkMode)
     return(
          <div className={styles.abajo}>
          <h2 className={styles.titulo2}> HABILIDADES</h2>
@@ -37,7 +39,7 @@ export default function Skills(){
             </div>
         </div>
         <div className={styles.containerfin}>
-           <div className={styles.fin}>
+           <div className={darkMode ? styles.fin2 : styles.fin}>
              </div>
         </div>
              </div>

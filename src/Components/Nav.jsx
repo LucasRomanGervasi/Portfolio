@@ -1,14 +1,19 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import styles from "./Nav.module.css"
-import logo from "../img/LG.png" 
 import { FaBars } from "react-icons/fa";
 import {IoClose} from "react-icons/io5";
 import {  BsGithub, BsWhatsapp } from "react-icons/bs";
 import {FaLinkedinIn} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
+import {changeMode} from "../redux/actions.js"
 
 
 export default function Nav(){
+    const dispatch = useDispatch()
+    const handleClick = () => {        
+        dispatch(changeMode())
+    }
     const [showMobileBurger, setSohwMobileBurger] = useState(false)
     const [nav, setNav] = useState(true)
 
@@ -29,8 +34,20 @@ export default function Nav(){
                     <a className={styles.boton} href="#tecnologias">HABILIDADES </a>
                     <a className={styles.boton} href="#proyect">PROYECTOS</a>
                     <a className={styles.boton} href="#contacts">CONTACTO </a>
+        <div className="switch-checkbox">
+          <label className="switch">
+            <input type="checkbox" onClick={handleClick} />
+            <span className="slider round"> </span>
+          </label>
+    </div>
                 </div>
                 <div className={ nav ? styles.botonera2  : styles.botonera3 }>
+                    <div className="switch-checkbox">
+          <label className="switch">
+            <input type="checkbox" onClick={handleClick} />
+            <span className="slider round"> </span>
+          </label>
+    </div>
                     <a className={styles.burger} onClick={() => setSohwMobileBurger(!showMobileBurger)}>{!showMobileBurger? <FaBars/> : <IoClose/>}
                     </a>
                 </div>

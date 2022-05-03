@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import perfil from "../img/Perfil5.png"
 import styles from "./Home.module.css"
 import { FiDownload } from "react-icons/fi";
+import {useSelector} from "react-redux"
 
 export default function Home(){
     return(

@@ -33,6 +33,15 @@
     color:rgb(20, 20, 20);
     text-decoration: none;
 }
+.titulo2{
+    font-size: 12px;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color:rgb(238, 238, 238);
+    text-decoration: none;
+}
 .parrafo{
     font-size: 12px;
     color:rgb(20, 20, 20);

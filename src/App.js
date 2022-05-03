@@ -12,8 +12,10 @@ import RestoBook from "./Components/RestoBook"
 import Nav from "./Components/Nav";
 import Skills from "./Components/Skills";
 import { BiArrowFromBottom } from "react-icons/bi";
+import {useSelector} from "react-redux"
 
  function Inicio() {
+  const darkMode = useSelector(state => state.darkMode)
    const [btn, setBtn] = useState(true)
 
   window.addEventListener("scroll", function scroll(){
@@ -25,7 +27,7 @@ import { BiArrowFromBottom } from "react-icons/bi";
        }
    });
   return (
-    <div className="App">
+    <div className={ darkMode ? "App2" : "App"}>
     <div   className="Nav"> <Nav/> </div>
     <div className='Reading'><ReadingProgress/></div>
     <div className="Home" id="home">    <Home/> </div>
