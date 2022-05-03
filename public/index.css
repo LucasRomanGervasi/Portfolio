@@ -13,7 +13,28 @@ body{
   font-family: 'Merriweather Sans', sans-serif;
 }
 
+.carousel-inner{
+  width: 500px;
+}
 
+.carousel-control-prev{
+  background-color: rgb(30, 4, 71);
+  height: 50px;
+  margin-top: 60px;
+  border-radius: 2px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-control-next{
+  background-color: rgba(30, 4, 71);
+  height: 50px;
+  border-radius: 2px ;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #root{
   width:100%;
 }

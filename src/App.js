@@ -12,7 +12,6 @@ import RestoBook from "./Components/RestoBook"
 import Nav from "./Components/Nav";
 import Skills from "./Components/Skills";
 import { BiArrowFromBottom } from "react-icons/bi";
-import ReadingProgres from "./Components/ReadingProgress";
 
  function Inicio() {
    const [btn, setBtn] = useState(true)
