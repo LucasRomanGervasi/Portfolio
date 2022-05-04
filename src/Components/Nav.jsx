@@ -7,6 +7,7 @@ import {  BsGithub, BsWhatsapp } from "react-icons/bs";
 import {FaLinkedinIn} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
 import {changeMode} from "../redux/actions.js"
+import LG from "../img/LG.png"
 
 
 export default function Nav(){

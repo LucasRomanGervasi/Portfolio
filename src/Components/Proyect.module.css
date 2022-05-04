@@ -129,16 +129,19 @@
     justify-content: center;
 }
 .boton:hover{
-    background-color: rgba(23, 198, 204, 0.514);
-    color: rgb(245, 245, 245);
-    transition: 0.9s;
-    
+    background: rgb(61, 61, 248);
+    color:rgb(255, 255, 255);
+    transform:scale(1.08);
 }
 .boton{
-    margin: 10px;
+    background-color: rgba(104, 22, 236, 0.548);
+    transition: 0.9s;
     border-radius: 5px;
     display: flex;
-    width: 70px;
+    padding: 2px;
+    width: 100px;
+    margin-bottom: 15px;
+    margin-top: 10px;
     color: aliceblue;
     font-size: 12px;
     justify-content: space-evenly;

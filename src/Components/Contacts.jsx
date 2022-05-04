@@ -20,7 +20,6 @@ const Result = () => {
 
 export default function Contacts(){
     const [result, showResult] = useState(false)
-
     const sendEmail = (event) => {
         event.preventDefault();
         emailjs.sendForm('service_lhmycj9', 'template_m3yg8gt', event.target, '8pGs4U6nn-mwMRBjk')
@@ -28,14 +27,13 @@ export default function Contacts(){
               console.log(result);
           }, (error) => {
               console.log(error);
-          });
-          event.target.reset()
-          showResult(true)
+            });
+            event.target.reset()
+            showResult(true)
         };
         setTimeout(() => {
             showResult(false)
         }, 5000)
-
       return (
         <div>
           <div className={styles.container}>
@@ -51,11 +49,11 @@ export default function Contacts(){
                 <br/>
                 <label>Email</label>
                 <br />
-                <input className={styles.input} type="text" autoComplete="off" placeholder="example@hotmail.com" name="email" required/>
+                <input className={styles.input} type="text" autoComplete="off" placeholder="example@hotmail.com" name="email" required  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"/>
                 <br/>
                 <label>Numero</label>
                 <br />
-                <input className={styles.input} type="text" autoComplete="off" placeholder="+54 9 11 6802 0511" name="phone" required/>
+                <input className={styles.input} type="text" autoComplete="off" placeholder="+54 9 11 6802 0511" name="phone" required pattern="[0-9]{9}"/>
                 <br/>
                 <span>Mensaje</span>
                 <br />

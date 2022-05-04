@@ -35,16 +35,17 @@
     font-size: 10px;
 }
 .botonera{
-    width: 100%;
     align-items: center;
-    display: flex;
     right: 0;
+    display: flex;
+    width: 100%;
     justify-content: space-evenly;
 }
 .boton{
     position: relative;
     text-decoration: none;
     letter-spacing: 0.5px;
+    margin-left: 0px;
 }
 
 .boton::after{

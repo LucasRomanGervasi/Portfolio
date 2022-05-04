@@ -11,8 +11,8 @@
 }
 
 .carousel-control-prev{
-  background-color: rgb(30, 4, 71);
-  height: 50px;
+  background-color: rgb(28, 70, 206);
+  height: 80px;
   margin-top: 60px;
   border-radius: 2px ;
   display: flex;
@@ -21,8 +21,8 @@
   align-items: center;
 }
 .carousel-control-next{
-  background-color: rgba(30, 4, 71);
-  height: 50px;
+  background-color: rgb(28, 70, 206);
+  height: 80px;
   border-radius: 2px ;
   margin-top: 60px;
   display: flex;
@@ -60,12 +60,6 @@ code {
   border: solid rgb(0, 0, 70) 6px;
 } 
 
-li {
-  height: 10px;
-  width: 10px;
-  border-radius: 50px;
-  border: solid black 2px;
-}
 a{
   font-family: 'Merriweather Sans', sans-serif;
   text-decoration:none;
