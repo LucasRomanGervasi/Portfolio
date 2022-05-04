@@ -43,14 +43,28 @@ export default function Nav(){
     </div>
                 </div>
                 <div className={ nav ? styles.botonera2  : styles.botonera3 }>
-                    <div className="switch-checkbox">
-          <label className="switch">
+               { !showMobileBurger? 
+                <div className="switch-checkbox">
+               <label className="switch">
             <input type="checkbox" onClick={handleClick} />
             <span className="slider round"> </span>
           </label>
-    </div>
-                    <a className={styles.burger} onClick={() => setSohwMobileBurger(!showMobileBurger)}>{!showMobileBurger? <FaBars/> : <IoClose/>}
-                    </a>
+                 </div> : null
+                  }
+                    <div className={styles.burger} onClick={() => setSohwMobileBurger(!showMobileBurger)}>{!showMobileBurger? 
+                    <button className={styles.botoncontainer}>
+                    <span className={styles.topline}> </span>
+                    <span className={styles.middleline}> </span>
+                    <span className={styles.bottomline}></span>
+                    </button>
+                    : 
+                    <button className={styles.botoncontainer}>
+                    <span className={styles.topline2}> </span>
+                    <span className={styles.middleline2}> </span>
+                    <span className={styles.bottomline2}></span>
+                    </button>
+                    }
+                    </div>
                 </div>
                     {showMobileBurger? 
                 <div className={styles.botones2}>

@@ -108,14 +108,6 @@
         position:fixed;
         justify-content: flex-end;
     }
-    .burger{
-        justify-content: flex-end;
-        font-size: 30px;
-        align-items: center;
-        transition:2s;
-        z-index: 2px;
-        padding-right: 20px;
-    }
     .containerBurger{
         background: rgba(4, 4, 239, 0.952);
         display: flex;
@@ -152,7 +144,7 @@
     .redes{
         width: 100%;
         display: flex;
-        padding-top:60px;
+        padding-top:30px;
         justify-content: center;
     }
     .wpp{
@@ -205,9 +197,94 @@
         position:fixed;
         justify-content: flex-end;
         transition: 2s;
-    }
 
-    @media screen and (max-width: 460px){
+    }
+    .burger{
+        margin-bottom: 5px;
+        right: 0;
+        height: 50px;
+    }
+    .botoncontainer{
+        height: 50px;
+    }
+    .burger .botoncontainer {
+        background: none;
+            cursor: pointer;
+            padding: 0;
+            border:none;
+            width: 50px;
+            outline: none;
+        }
+        .burger .botoncontainer span{
+            animation-fill-mode: forwards;
+            animation-duration: 2s;
+            border-radius: 5px;
+            background: white;
+            display: block;
+            border:none;
+            width: 60%;
+            margin: 5px auto;
+            height: 4px;
+        }
+        
+        .burger .botoncontainer .topline{
+            animation-name: top-line-animation-close;
+        }
+        .burger .botoncontainer .middleline{
+            animation-name: middle-line-animation-close;
+        }
+        .burger .botoncontainer .bottomline{
+            animation-name: bottom-line-animation-close;
+        }       
+        .burger .botoncontainer .topline2{
+            animation-name: top-line-animation;
+        }
+        .burger .botoncontainer .middleline2{
+            animation-name: middle-line-animation;
+        }
+        .burger .botoncontainer .bottomline2{
+            animation-name: bottom-line-animation;
+        }         
+
+        @keyframes top-line-animation{
+            50%, 100%{
+                margin: 0 auto;
+                float: top;
+                width: 55%;
+                transform: translateY(5px) rotate(45deg);
+            }
+        }
+        @keyframes middle-line-animation{
+            20%, 100%{
+                margin: 0 auto;
+                transform: translateY(-2px) rotate(-45deg);
+                opacity: 0;
+            }
+        }
+        @keyframes bottom-line-animation{
+            50%, 100%{
+                margin: 0 auto;
+                float: top;
+                width: 55%;
+                transform: translateY(-2px) rotate(-45deg);
+            }
+        }
+        @keyframes top-line-animation-close{
+            50%, 100%{
+                transform: translateY(2px) rotate(180deg);
+            }
+        }
+        @keyframes middle-line-animation-close{
+            20%, 100%{
+                transform: translateY(2px) rotate(180deg);
+            }
+        }
+        @keyframes bottom-line-animation-close{
+            50%, 100%{
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+        @media screen and (max-width: 460px){
         .botonera2{
             display: flex;
             align-items: center;
@@ -230,6 +307,12 @@
             width: 100%;
             position:fixed;
         
+        }
+        .botonBurger{
+            margin-top: 30px;
+        }
+        .redes{
+            margin-bottom: 30px;
         }
     }
 }
