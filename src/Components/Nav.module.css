@@ -120,6 +120,18 @@
         position:fixed;
     
     }
+    .containerBurger2{
+        background: rgba(4, 4, 73, 0.98);
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top:0px;
+        width: 100%;
+        position:fixed;
+    
+    }
     .botonBurger{
         margin-top: 50px;
         color: rgb(175, 175, 175);
@@ -249,7 +261,6 @@
         @keyframes top-line-animation{
             50%, 100%{
                 margin: 0 auto;
-                float: top;
                 width: 55%;
                 transform: translateY(5px) rotate(45deg);
             }
@@ -271,12 +282,12 @@
         }
         @keyframes top-line-animation-close{
             50%, 100%{
-                transform: translateY(2px) rotate(180deg);
+                transform: translateY(0px) rotate(180deg);
             }
         }
         @keyframes middle-line-animation-close{
             20%, 100%{
-                transform: translateY(2px) rotate(180deg);
+                transform: translateY(0px) rotate(180deg);
             }
         }
         @keyframes bottom-line-animation-close{
@@ -308,6 +319,18 @@
             position:fixed;
         
         }
+        .containerBurger2{
+            background: rgba(3, 3, 59, 0.952);
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top:0px;
+            width: 100%;
+            position:fixed;
+        
+        }
         .botonBurger{
             margin-top: 30px;
         }
@@ -317,4 +340,5 @@
     }
 }
 
+/*           */
 

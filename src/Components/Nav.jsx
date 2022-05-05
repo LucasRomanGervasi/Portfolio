@@ -8,9 +8,11 @@ import {FaLinkedinIn} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
 import {changeMode} from "../redux/actions.js"
 import LG from "../img/LG.png"
+import { useSelector } from "react-redux";
 
 
 export default function Nav(){
+  const darkMode = useSelector(state => state.darkMode)
     const dispatch = useDispatch()
     const handleClick = () => {        
         dispatch(changeMode())
@@ -43,24 +45,23 @@ export default function Nav(){
     </div>
                 </div>
                 <div className={ nav ? styles.botonera2  : styles.botonera3 }>
-               { !showMobileBurger? 
+               
                 <div className="switch-checkbox">
                <label className="switch">
             <input type="checkbox" onClick={handleClick} />
             <span className="slider round"> </span>
           </label>
-                 </div> : null
-                  }
+                 </div> 
                     <div className={styles.burger} onClick={() => setSohwMobileBurger(!showMobileBurger)}>{!showMobileBurger? 
                     <button className={styles.botoncontainer}>
                     <span className={styles.topline}> </span>
-                    <span className={styles.middleline}> </span>
+                    <span className={styles.middleline}></span>
                     <span className={styles.bottomline}></span>
                     </button>
                     : 
                     <button className={styles.botoncontainer}>
                     <span className={styles.topline2}> </span>
-                    <span className={styles.middleline2}> </span>
+                    <span className={styles.middleline2}></span>
                     <span className={styles.bottomline2}></span>
                     </button>
                     }
@@ -68,7 +69,7 @@ export default function Nav(){
                 </div>
                     {showMobileBurger? 
                 <div className={styles.botones2}>
-                <div className={styles.containerBurger}>
+                <div className={ darkMode ? styles.containerBurger2 : styles.containerBurger  }>
                 <a className={styles.botonBurger} onClick={() => setSohwMobileBurger(!showMobileBurger)} href="#aboutMe">SOBRE MI</a>
                     <a className={styles.botonBurger} onClick={() => setSohwMobileBurger(!showMobileBurger)} href="#tecnologias">HABILIDADES </a>
                     <a className={styles.botonBurger} onClick={() => setSohwMobileBurger(!showMobileBurger)} href="#proyect">PROYECTOS</a>
