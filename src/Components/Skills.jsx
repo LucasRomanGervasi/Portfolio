@@ -12,7 +12,7 @@ export default function Skills(){
          <h2 className={styles.titulo2}> HABILIDADES</h2>
              <div className={styles.skills}>
         <div className={styles.container}>
-            <div className={styles.frontend}> 
+            <div className={ darkMode? styles.frontend : styles.frontend2}> 
             <h1 className={styles.titulo1}>FRONT END</h1>
             <h2 className={styles.tecnologias}> <span className={styles.react}><DiReact/></span> React </h2>
             <h2 className={styles.tecnologias}> <span className={styles.react}><DiReact/></span> React Native </h2>
@@ -20,18 +20,18 @@ export default function Skills(){
             <h2 className={styles.tecnologias}> <span className={styles.html}><DiHtml5/></span> HTML </h2>
             <h2 className={styles.tecnologias}> <span className={styles.css}><DiCss3/></span> CSS </h2>
             </div>
-            <div className={styles.backend}>
-            <h1 className={styles.titulo1}>BACK END</h1>
+            <div className={darkMode? styles.backend: styles.backend2}>
+            <h1 className={ styles.titulo1}>BACK END</h1>
             <h2 className={styles.tecnologias}> <span className={styles.js}><DiNodejsSmall/></span> Node.js</h2>
             <h2 className={styles.tecnologias}> <span className={styles.js}><DiNodejsSmall/></span> Express</h2>
             <h2 className={styles.tecnologias}> <span className={styles.firebase}><SiFirebase/></span> Firebase </h2>
             <h2 className={styles.tecnologias}> <span className={styles.sql}><SiPostgresql/></span> Postgre SQL </h2>
             </div>
-            <div className={styles.lenguajes}>
+            <div className={darkMode? styles.lenguajes: styles.lenguajes2}>
             <h1 className={styles.titulo1}>LENGUAJES</h1>
             <h2 className={styles.tecnologias}> <span className={styles.javascript}><SiJavascript/></span> Javascript </h2>
             </div>
-            <div className={styles.otros}>
+            <div className={darkMode? styles.otros: styles.otros2}>
             <h1 className={styles.titulo1}>OTRAS</h1>
             <h2 className={styles.tecnologias}> <span className={styles.git}><DiGit/></span>GIT </h2>
             <h2 className={styles.tecnologias}><span className={styles.trello}><FaTrello/></span> Trello </h2>
