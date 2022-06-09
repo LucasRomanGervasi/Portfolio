@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 export default function Skills(){
     const darkMode = useSelector(state => state.darkMode)
     return(
-         <div className={styles.abajo}>
+                <div className={styles.abajo}>
          <h2 className={styles.titulo2}> HABILIDADES</h2>
              <div className={styles.skills}>
         <div className={styles.container}>
@@ -38,10 +38,10 @@ export default function Skills(){
             <h2 className={styles.tecnologias}>    Metodología AGILE SCRUM </h2>
             </div>
         </div>
-        <div className={styles.containerfin}>
+         <div className={styles.containerfin}>
            <div className={darkMode ? styles.fin2 : styles.fin}>
-             </div>
-        </div>
+           </div>
+        </div> 
              </div>
          </div>
     )

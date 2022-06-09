@@ -32,9 +32,9 @@ export default function Proyect(){
              <a className={styles.boton} href="/RestoBook">Ver más</a>
         </div>
         </div>
-        <div className={styles.containerfin} >
+         <div className={styles.containerfin} >
           <div className={ darkMode ? styles.fin2 : styles.fin}>
-          </div>
+          </div> 
             </div>
           </div>
           </div>

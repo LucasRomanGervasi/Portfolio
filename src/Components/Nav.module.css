@@ -78,7 +78,7 @@
     display: none;
 }
 .redes{
-    display: none;
+    display: z;
 }
 
 @media screen and (max-width: 650px){

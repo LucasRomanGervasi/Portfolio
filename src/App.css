@@ -16,7 +16,10 @@
   color: aliceblue;
 }
 
-
+.About{
+  margin: 0;
+  height: 100%;
+}
 .App-logo {
  height: 40vmin;
  pointer-events: none;
@@ -68,13 +71,15 @@
   width: 100%;
 }
 .containerbtn{
-  padding-bottom: 20px;
+  margin: 0;
+
 }
 
   @media screen and (max-width: 370px){
     .containerbtn{
       display: none ;
     }
+
   }
 @media (prefers-reduced-motion: no-preference) {
  .App-logo {
@@ -162,7 +167,7 @@ a{
 }
 
 input:checked + .slider {
-  background-color: #1924c1;
+  background-color: #0462f080;
 }
 
 input:focus + .slider {

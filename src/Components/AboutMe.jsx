@@ -12,7 +12,7 @@ export default function AboutMe(){
         <div className={styles.home}>
         <div className={styles.container}>
             <div className={styles.arriba}>
-            <div className={styles.wrapper}>
+            <div className={ darkMode ? styles.wrapper : styles.wrapper2}>
             <h2 className={styles.titulo1}> SOBRE MI</h2>
             <div className={styles.parrafo}>
             <p className={styles.parrafo2}>Nací un 5 de noviembre del 2001 en Buenos Aires, Argentina.</p> 
@@ -21,6 +21,12 @@ export default function AboutMe(){
             <p className={styles.parrafo2}>Soy una persona comprometida y apasionado por lo que hago. Estoy en búsqueda de nuevos desafíos donde pueda desarrollarme como profesional y adquirir nuevos conocimientos. </p>
             </div>
             </div>
+            {darkMode ? 
+             <svg className={styles.curvas} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#443886"  fill-opacity="1" d="M0,224L60,202.7C120,181,240,139,360,138.7C480,139,600,181,720,208C840,235,960,245,1080,240C1200,235,1320,213,1380,202.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+             </path></svg> 
+             :
+             <svg className={styles.curvas} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#516ff5f8"  fill-opacity="1" d="M0,224L60,202.7C120,181,240,139,360,138.7C480,139,600,181,720,208C840,235,960,245,1080,240C1200,235,1320,213,1380,202.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+             </path></svg>}
             <div className={styles.wrapper1}>
             <h2 className={styles.titulo2}> EDUCACIÓN</h2>
             <div className={styles.education}>

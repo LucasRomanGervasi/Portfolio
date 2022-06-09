@@ -1,7 +1,6 @@
 .container{
     height: 100%;
     display: flex;
-    border-radius: 10px;
     flex-wrap:wrap;
     justify-content:space-evenly;
 }
@@ -118,11 +117,11 @@
     color: rgb(255, 243, 71);
 }
 .fin{
-        border-bottom: solid rgb(0,0,60) 2px;
-        display: flex;
-        align-items: center;
-        width: 50%;
-        margin-top: 60px;
+    border-bottom: solid rgb(0,0,60) 2px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-top: 60px;
 }
 .fin2{
     border-bottom: solid rgb(255, 255, 255) 2px;
@@ -138,10 +137,9 @@
     margin-right:0px;
     width:100%;
     justify-content: space-between;
-    margin-bottom: 0px;
     padding-top: 40px;
     height:100%;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 .skills{
     width: 100%;
