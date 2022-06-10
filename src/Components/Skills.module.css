@@ -5,7 +5,7 @@
     margin-right:0px;
     width:100%;
     justify-content: space-between;
-    background-color: rgb(124, 153, 252);
+    padding: 30px;
 }
 .container{
     height: 100%;
@@ -202,14 +202,13 @@ box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635);
 .skills{
     width: 100%;
     height: 100%;
-    background-color:rgb(124, 153, 252);
 }
 .skills2{
     width: 100%;
     background-color:rgb(33, 17, 77);
     height: 100%;
 }
-.titulo2{
+.titulo{
     color: rgb(0,0,60);
     font-size: 20px;
     font-weight: bold;
@@ -218,15 +217,7 @@ box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635);
     display:flex;
     justify-content:center;
 }
-.titulo{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: bold;
-    width: 100%;
-    padding:40px;
-    display:flex;
-    justify-content:center;
-}
+
 .containerfin{
     display: flex;
     width: 100%;

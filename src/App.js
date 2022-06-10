@@ -39,7 +39,7 @@ import {useSelector} from "react-redux"
     </div>
     <div className="About" id="aboutMe"> <AboutMe/> </div>
     <div className="Skills" id="tecnologias"> <Skills/> </div>
-    <div id="proyect"> <Proyect/> </div>
+    <div > <Proyect/> </div>
     <div id="contacts"> <Contacts/> </div> 
     </div>
   );

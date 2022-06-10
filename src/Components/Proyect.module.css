@@ -1,5 +1,6 @@
 .proyectos{
     z-index: 0;
+    margin-top: 50px;
 }
 .container1{
     height: 100%;
@@ -18,7 +19,7 @@
     width: 100%;
     display:flex;
     justify-content:center;
-    margin-bottom: 0px;
+    margin-bottom:30px;
 }
 .titulo1{
     font-size: 13px;

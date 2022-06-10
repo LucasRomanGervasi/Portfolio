@@ -10,7 +10,7 @@ export default function Skills(){
     return(
                 <div className={styles.abajo}>
              <div className={styles.skills}>
-         <h2 className={darkMode ? styles.titulo2 : styles.titulo}> HABILIDADES</h2>
+         <h2 className={ styles.titulo}> HABILIDADES</h2>
         <div className={styles.container}>
             <div className={ darkMode? styles.frontend : styles.frontend2}> 
             <h1 className={styles.titulo1}>FRONT END</h1>
@@ -38,10 +38,10 @@ export default function Skills(){
             <h2 className={styles.tecnologias}>    Metodología AGILE SCRUM </h2>
             </div>
         </div>
-         {/* <div className={styles.containerfin}>
+          <div className={styles.containerfin}>
            <div className={darkMode ? styles.fin2 : styles.fin}>
            </div>
-        </div>  */}
+        </div>  
              </div>
          </div>
     )
