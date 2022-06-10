@@ -23,12 +23,11 @@
 .wrapper2{
     padding: 0px;
     width: 100%;
-    background-color: #ffffff;
+    margin-top: 50px;
 }
 .wrapper{
     padding: 0px;
     width: 100%;
-    background-color: rgb(0,0,60);
     margin-top: 50px;
 }
 .wrapper1{
