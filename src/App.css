@@ -2,13 +2,23 @@
   margin:0px;
   width:100%;
   transition: 0.9s;
+  background-color: rgb(174, 152, 255);
 }
 
 .App2{
   transition: 0.9s;
   background-color: rgb(8, 12, 48);
 }
-
+.curvas{
+  margin-bottom: -20px;
+  z-index: 0;
+}
+.curvas2{
+  margin-bottom: -20px;
+}
+.proyect{
+  z-index: 5;
+}
 .App2 h2{
   color: aliceblue;
 }

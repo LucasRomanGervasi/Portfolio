@@ -38,10 +38,10 @@ export default function Skills(){
             <h2 className={styles.tecnologias}>    Metodología AGILE SCRUM </h2>
             </div>
         </div>
-          <div className={styles.containerfin}>
+          {/* <div className={styles.containerfin}>
            <div className={darkMode ? styles.fin2 : styles.fin}>
            </div>
-        </div>  
+        </div>   */}
              </div>
          </div>
     )

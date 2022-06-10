@@ -9,6 +9,7 @@ import {FaInstagram} from "react-icons/fa";
 import {GiSmartphone} from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
 import {IoLocationSharp} from "react-icons/io5"
+import { useSelector } from "react-redux";
 init("8pGs4U6nn-mwMRBjk");
 const Result = () => {
     return(
@@ -19,6 +20,7 @@ const Result = () => {
 }
 
 export default function Contacts(){
+    const darkMode = useSelector(state => state.darkMode)
     const [result, showResult] = useState(false)
     const sendEmail = (event) => {
         event.preventDefault();
@@ -36,7 +38,7 @@ export default function Contacts(){
         }, 5000)
       return (
         <div>
-          <div className={styles.container}>
+          <div className={darkMode ? styles.container2 : styles.container}>
             <h2 className={styles.titulo}>CONTACTO</h2>
             <div className={styles.right}>
             <div className={styles.formulario}> 
