@@ -11,10 +11,10 @@ export default function AboutMe(){
     return(
         <div className={styles.home}>
         <div className={styles.container}>
-            <div className={styles.arriba}>
-            <div className={ darkMode ? styles.wrapper : styles.wrapper2}>
-            <h2 className={styles.titulo1}> SOBRE MI</h2>
-            <div className={styles.parrafo}>
+            <div  className={styles.arriba}>
+            <div  className={ darkMode ? styles.wrapper : styles.wrapper2}>
+            <h2  className={styles.titulo1}> SOBRE MI</h2>
+            <div  className={styles.parrafo}>
             <p className={styles.parrafo2}>Nací un 5 de noviembre del 2001 en Buenos Aires, Argentina.</p> 
             <p className={styles.parrafo2}>En 2020, época de pandemía, decidí dar un giro en mi vida y entrar en el mundo IT. 
             Hoy en día soy un <a style={ darkMode ?  { color: "#ffffff"} : { color: "rgb(0,0,60)"} }> DESARROLLADOR WEB FULL STACK </a>. Tengo experiencia creando apps desde <a style={ darkMode ? { color: "#ffffff"}:{ color: "rgb(0,0,60)"}   }> FRONT-END </a> y <a style={ darkMode ?  { color: "#ffffff"} :  { color: "rgb(0,0,60)"} }>BACK-END</a>. </p>
