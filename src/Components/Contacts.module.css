@@ -18,12 +18,11 @@
 .titulo{
     font-weight: bold;
     color: rgb(0,0,60);
-    font-size: 30px;
+    font-size: 20px;
     width: 100%;
     display:flex;
     justify-content:center;
     margin-bottom: 40px;
-    font-family: 'Fjalla One', sans-serif;
 }
 .left{
     display: flex;

@@ -68,24 +68,22 @@
 
 .titulo1{
     color: rgb(0,0,60);
-    font-size: 30px;
+    font-size: 20px;
     width: 100%;
     font-weight: bold;
     display:flex;
     justify-content: center;
     padding:40px;
     padding-top: 90px;
-    font-family: 'Fjalla One', sans-serif;
 }
 .titulo2{
     color: rgb(0,0,60);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     width: 100%;
     padding-top:20px;
     padding-bottom: 40px;
     display:flex;
-    font-family: 'Fjalla One', sans-serif;
     justify-content:center;
 }
 .education{
