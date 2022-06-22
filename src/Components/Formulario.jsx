@@ -69,7 +69,7 @@ const Result = () => {
         }
     const sendEmail = (event) => {
         event.preventDefault();
-        if(errors.email === "noemail" || errors.fullName === "nonombre"  || errors.phone === "nophone" ){
+        if(errors.email === "noemail" || errors.fullName === "nonombre"  || errors.phone === "nophone"  || errors.mensaje === "nomensaje" ){
             console.log("nonon")
         }
         else if(errors.email === "" || errors.fullName === "" || errors.phone === "" || errors.mensaje === "" ){
