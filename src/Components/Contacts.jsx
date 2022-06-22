@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import Nav from "./Nav";
-import emailjs from '@emailjs/browser';
+import React from "react";
 import styles from "./Contacts.module.css"
-import{ init } from '@emailjs/browser';
 import {  BsGithub, BsWhatsapp } from "react-icons/bs";
 import {FaLinkedinIn} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
@@ -10,67 +7,19 @@ import {GiSmartphone} from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
 import {IoLocationSharp} from "react-icons/io5"
 import { useSelector } from "react-redux";
-init("8pGs4U6nn-mwMRBjk");
-const Result = () => {
-    return(
-        <p className={styles.mensaje}>
-            Tu mensaje fue enviado, muchas gracias!
-        </p>
-    )
-}
+import Formulario from "./Formulario";
 
 export default function Contacts(){
-    const darkMode = useSelector(state => state.darkMode)
-    const [result, showResult] = useState(false)
-    const sendEmail = (event) => {
-        event.preventDefault();
-        emailjs.sendForm('service_lhmycj9', 'template_m3yg8gt', event.target, '8pGs4U6nn-mwMRBjk')
-          .then((result) => {
-              console.log(result);
-          }, (error) => {
-              console.log(error);
-            });
-            event.target.reset()
-            showResult(true)
-        };
-        setTimeout(() => {
-            showResult(false)
-        }, 5000)
+    const darkMode = useSelector(state => state.darkMode);
+
+
       return (
         <div>
           <div className={darkMode ? styles.container2 : styles.container}>
             <h2 className={styles.titulo}>CONTACTO</h2>
-            <div className={styles.right}>
-            <div className={styles.formulario}> 
-            <h1 className={styles.titulo1}> ¡Me encantaría saber de vos! Enviame un mensaje en el formulario </h1>
-            <div className={styles.wrapper}>
-            <form className={styles.form} onSubmit={sendEmail}>
-                <label>Nombre</label>
-                <br/>
-                <input className={styles.input} type="text" autoComplete="off" placeholder="Lucas" name="fullName" required/>
-                <br/>
-                <label>Email</label>
-                <br />
-                <input className={styles.input} type="text" autoComplete="off" placeholder="example@hotmail.com" name="email" required  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"/>
-                <br/>
-                <label>Numero</label>
-                <br />
-                <input className={styles.input} type="text" autoComplete="off" placeholder="+54 9 11 6802 0511" name="phone" required pattern="[0-9]{9}"/>
-                <br/>
-                <span>Mensaje</span>
-                <br />
-                <textarea className={styles.textarea} autoComplete="off"  placeholder="Escribí tu mensaje" name="message" required />
-                <br />
-                <div className={styles.buttondiv} > 
-                <button className={styles.button}> Enviar </button>
-                </div>
-                </form>
-            </div>
-                <div className={styles.mensajecontainer}>
-                    {result ? <Result /> : null}
-                </div>
-            </div>
-            </div> 
+        </div>
+        <div className={styles.formulario}>
+            <Formulario/>
         </div>
           <div className={styles.left}>
           <div className={styles.contactospersonales}>
