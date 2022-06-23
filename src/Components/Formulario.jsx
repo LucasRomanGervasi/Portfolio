@@ -3,14 +3,24 @@ import styles from "./Formulario.module.css"
 import emailjs from '@emailjs/browser';
 import{ init } from '@emailjs/browser';
 import { FaTimesCircle, FaRegCheckCircle, FaLastfmSquare } from "react-icons/fa";
+import Confetti from 'react-confetti'
 init("8pGs4U6nn-mwMRBjk");
 const Result = () => {
+    // if(result === "enviado"){
         return(
-            <p className={styles.mensaje}>
-            Tu mensaje fue enviado, muchas gracias!
-       </p>
-    )
+            <h1 className={styles.mensaje}>
+            Tu mensaje fue enviado con éxito, muchas gracias!
+            </h1>
+        )
+            // }else{
+            //     return(
+            //         <p className={styles.mensajeNo}>
+            //             Algo salio mal, es necesario que completes todos los datos!
+            //    </p>
+            //     )
+            // }
 }
+
 
   // Validacion
     const expresiones = {
@@ -40,11 +50,11 @@ const Result = () => {
          if ( expresiones.telefono.test(input.phone)) {
             errors.phone = "siphone"
         }
-        if ( !input.mensaje){
-            errors.mensaje = "nomensaje"
+        if ( !input.message){
+            errors.message = "nomensaje"
         }
-        if (input.mensaje){
-            errors.mensaje = "simensaje"
+        if (input.message){
+            errors.message = "simensaje"
         }
         return errors;
     }
@@ -55,7 +65,7 @@ const Result = () => {
             fullName:"",
             email:"",
             phone:"",
-            mensaje:""
+            message:""
     })
     function handleChange(e){
         setInput({
@@ -69,15 +79,14 @@ const Result = () => {
         }
     const sendEmail = (event) => {
         event.preventDefault();
-        if(errors.email === "noemail" || errors.fullName === "nonombre"  || errors.phone === "nophone"  || errors.mensaje === "nomensaje" ){
-            console.log("nonon")
+        if(errors.email === "noemail" || errors.fullName === "nonombre"  || errors.phone === "nophone"  || errors.message === "nomensaje" ){
         }
-        else if(errors.email === "" || errors.fullName === "" || errors.phone === "" || errors.mensaje === "" ){
+        else if(errors.email === "" || errors.fullName === "" || errors.phone === "" || errors.message === "" ){
             setErrors({
                 fullName: "nonombre",
                 email:"noemail",
                 phone:"nophone",
-                mensaje:"nomensaje"
+                message:"nomensaje"
             })
         }
             else{
@@ -93,76 +102,97 @@ const Result = () => {
                 fullName:"",
                 email:"",
                 phone:"",
-                mensaje:""
+                message:""
             })
             setErrors({
                 fullName:"",
                 email:"",
                 phone:"",
-                mensaje:""
+                message:""
             })
         } 
-        };
-    setTimeout(() => {
-        showResult(false)
-    }, 1000)
-return(
-    <div className={styles.right}>
+        setTimeout(function(){
+            showResult(false)
+        }, 10000)
+        }
+    return(
+        <div className={styles.right}>
     <div className={styles.formulario}> 
     <h1 className={styles.titulo1}> ¡Me encantaría saber de vos! Enviame un mensaje en el formulario </h1>
 <div className={styles.wrapper}>
 <form className={styles.form} onSubmit={sendEmail}>
     <div className={styles.nombre}>
-    <label>Nombre</label>
+    <label className={styles.titulomensaje}>Nombre *</label>
     <br/>
+    <div className={styles.union}>
     <input className={ errors.fullName === "nonombre" ? styles.inputError : styles.input} type="text"  placeholder="Lucas Gervasi" name="fullName" value={input.fullName} onChange={(e) => handleChange(e)} /> 
     <span className={styles.iconMal}>{errors.fullName === "nonombre" ? <FaTimesCircle/> : null }</span>
     <span className={styles.iconBien}>{errors.fullName === "sinombre" ? <FaRegCheckCircle/> : null }</span>
+    </div>
     {errors.fullName === "nonombre"?     
                              <p className={styles.errors}>Debes ingresar un nombre valido, mayor a 2 letras y no puede contener números  </p>
                              : <p className={styles.errors2}></p>}
     </div>
     <br/>
     <div className={styles.email}>
-    <label>Email</label>
+    <label className={styles.titulomensaje}>Email *</label>
     <br/>
+    <div className={styles.union}>
     <input className={ errors.email === "noemail" ? styles.inputError : styles.input}  type="text"  placeholder="example@hotmail.com" name="email" value={input.email} onChange={(e) => handleChange(e)}/>
     <span className={styles.iconMal}>{errors.email === "noemail" ? <FaTimesCircle/> : null }</span>
     <span className={styles.iconBien}>{errors.email === "siemail" ? <FaRegCheckCircle/> : null }</span>
+    </div>
     {errors.email === "noemail" ?     
                              <p className={styles.errors}>Debes ingresar un email valido </p>
                              : <p className={styles.errors2}></p>}
     </div>
     <br/>
     <div className={styles.numero}>
-    <label>Numero</label>
+    <label className={styles.titulomensaje}>Número de contacto *</label>
     <br/>
+    <div className={styles.union}>
     <input className={ errors.phone === "nophone" ? styles.inputError : styles.input}type="text"  placeholder="1168020511" name="phone" value={input.phone} onChange={(e) => handleChange(e)}/>
     <span className={styles.iconMal}>{errors.phone === "nophone" ? <FaTimesCircle/> : null }</span>
     <span className={styles.iconBien}>{errors.phone === "siphone" ? <FaRegCheckCircle/> : null }</span>
+    </div>
     {errors.phone === "nophone" ?     
                              <p className={styles.errors}>Debes ingresar un telefono valido, que contenga entre 7 a 14 números </p>
                              : <p className={styles.errors2}></p>}
     </div>
     <br/>
     <div className={styles.mensajecontainer}>
-    <label className={styles.titulomensaje}>Mensaje</label>
+    <label className={styles.titulomensaje}>Mensaje *</label>
     <br/>
-    <textarea className={ errors.mensaje === "nomensaje" ? styles.textareaError : styles.textarea} placeholder="Escribí tu mensaje" name="mensaje" value={input.mensaje} onChange={(e) => handleChange(e)} />
-    <span className={styles.iconMal}>{errors.mensaje === "nomensaje" ? <FaTimesCircle/> : null }</span>
-    <span className={styles.iconBien}>{errors.mensaje === "simensaje" ? <FaRegCheckCircle/> : null }</span>
-    {errors.mensaje === "nomensaje" ?     
+    <div className={styles.union}>
+    <textarea className={ errors.message === "nomensaje" ? styles.textareaError : styles.textarea} placeholder="Escribí tu mensaje" name="message" value={input.message} onChange={(e) => handleChange(e)} />
+    <span className={styles.iconMal}>{errors.message === "nomensaje" ? <FaTimesCircle/> : null }</span>
+    <span className={styles.iconBien}>{errors.message === "simensaje" ? <FaRegCheckCircle/> : null }</span>
+    </div>
+    {errors.message === "nomensaje" ?     
                              <p className={styles.errorsMen}>Debes ingresar un mensaje </p>
                              : <p className={styles.errors2}></p>}
     </div>
     <div className={styles.buttondiv} > 
     <button className={styles.button}> Enviar </button>
     </div>
-    {result === true ?
+     {result === true ?
     <div className={styles.mensajeConfirmacion}>
+         <div className={styles.confeti}>
+        <Confetti
+      width={2000}
+      height={2000}
+      numberOfPieces={400}
+      tweenDuration={1000}
+      />
+      </div>
        <Result /> 
     </div>
-    : null}
+     : null}
+     {/* {result === "noenviado" ?
+    <div className={styles.mensajeNoConfirmacion}>
+       <Result/> 
+       </div>
+     : null} */}
     </form>
 </div>
 </div>
