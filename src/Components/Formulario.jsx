@@ -105,7 +105,7 @@ const Result = () => {
         };
     setTimeout(() => {
         showResult(false)
-    }, 5000)
+    }, 1000)
 return(
     <div className={styles.right}>
     <div className={styles.formulario}> 
@@ -137,7 +137,7 @@ return(
     <div className={styles.numero}>
     <label>Numero</label>
     <br/>
-    <input className={ errors.phone === "nophone" ? styles.inputError : styles.input}type="text"  placeholder="+54 9 11 6802 0511" name="phone" value={input.phone} onChange={(e) => handleChange(e)}/>
+    <input className={ errors.phone === "nophone" ? styles.inputError : styles.input}type="text"  placeholder="1168020511" name="phone" value={input.phone} onChange={(e) => handleChange(e)}/>
     <span className={styles.iconMal}>{errors.phone === "nophone" ? <FaTimesCircle/> : null }</span>
     <span className={styles.iconBien}>{errors.phone === "siphone" ? <FaRegCheckCircle/> : null }</span>
     {errors.phone === "nophone" ?     
@@ -158,9 +158,11 @@ return(
     <div className={styles.buttondiv} > 
     <button className={styles.button}> Enviar </button>
     </div>
-    <div className={styles.mensajecontainer}>
-        {result === true ? <Result /> : null}
+    {result === true ?
+    <div className={styles.mensajeConfirmacion}>
+       <Result /> 
     </div>
+    : null}
     </form>
 </div>
 </div>
