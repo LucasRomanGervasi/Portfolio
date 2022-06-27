@@ -59,13 +59,17 @@
     color:  rgb(253, 254, 254);
     font-size: 70px;    
 }
+.titulo2{
+    color:  rgb(253, 254, 254);
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .developer{
     font-size: 40px;
     flex-wrap: wrap;
 }
-.titulo2{
-    display: none;
-}
+
 .right{
     display: flex;
     align-items: center;
@@ -178,7 +182,11 @@
     }
 }
 
-
+@media screen and (max-width: 600px){
+    .titulo{
+        font-size: 50px;
+    }
+}
 @media screen and (max-width: 460px){
     .home{
         background: url("../img/fondomobile.jpg");
@@ -199,12 +207,7 @@
         height: 100%
     }
     .titulo{
-        display: none;
-    }
-    .titulo2{
-        display: flex;
         font-size: 40px;
-        color:  rgb(253, 254, 254);
     }
     .titulo1{
         margin-top:30px;

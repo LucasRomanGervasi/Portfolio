@@ -15,7 +15,6 @@ export default function Home(){
                 <h2 className={styles.titulo1}>Hola, soy</h2>
                 <div className={styles.parrafo}>
                  <h1 className={styles.titulo}> LUCAS ROMAN GERVASI </h1>
-                 <h1 className={styles.titulo2}> LUCAS GERVASI </h1>
                  {/* <h2 className={styles.titulo2}> Tengo 20 años, soy Argentino y Desarrollador Web Front End</h2> */}
                 </div>
                 <div className={styles.desarrolladorcontainer}>
