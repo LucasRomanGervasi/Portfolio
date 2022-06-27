@@ -132,6 +132,9 @@ const Result = () => {
                 email:"",
                 message:""
             })
+            setErrorsNumero({
+                phone:""
+            })
         } 
         setTimeout(function(){
             showResult(false)
@@ -156,7 +159,6 @@ const Result = () => {
                              <p className={styles.errors}>Debes ingresar un nombre valido, mayor a 2 letras y no puede contener números  </p>
                              : <p className={styles.errors2}></p>}
     </div>
-    <br/>
     <div className={styles.apellido}>
     <label className={styles.titulomensaje}>Apellido *</label>
     <br/>
@@ -184,7 +186,6 @@ const Result = () => {
                              <p className={styles.errors}>Debes ingresar un email valido </p>
                              : <p className={styles.errors2}></p>}
     </div>
-    <br/>
     <div className={styles.numero}>
     <label className={styles.titulomensaje}>Número de contacto </label>
     <br/>
