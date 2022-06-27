@@ -156,8 +156,8 @@ const Result = () => {
     <span className={styles.iconBien}>{errors.fullName === "sinombre" ? <FaRegCheckCircle/> : null }</span>
     </div>
     {errors.fullName === "nonombre"?     
-                             <p className={styles.errors}>Debes ingresar un nombre valido, mayor a 2 letras y no puede contener números  </p>
-                             : <p className={styles.errors2}></p>}
+                             <span className={styles.errors}>Debes ingresar un nombre valido, mayor a 2 letras y no puede contener números  </span>
+                             : <span className={styles.errors2}></span>}
     </div>
     <div className={styles.apellido}>
     <label className={styles.titulomensaje}>Apellido *</label>
@@ -168,8 +168,8 @@ const Result = () => {
     <span className={styles.iconBien}>{errors.last === "siapellido" ? <FaRegCheckCircle/> : null }</span>
     </div>
     {errors.last === "noapellido"?     
-                             <p className={styles.errors}>Debes ingresar un nombre valido, mayor a 2 letras y no puede contener números  </p>
-                             : <p className={styles.errors2}></p>}
+                             <span className={styles.errors}>Debes ingresar un nombre valido, mayor a 2 letras y no puede contener números  </span>
+                             : <span className={styles.errors2}></span>}
     <br/>
     </div>
     </div>
@@ -183,8 +183,8 @@ const Result = () => {
     <span className={styles.iconBien}>{errors.email === "siemail" ? <FaRegCheckCircle/> : null }</span>
     </div>
     {errors.email === "noemail" ?     
-                             <p className={styles.errors}>Debes ingresar un email valido </p>
-                             : <p className={styles.errors2}></p>}
+                             <span className={styles.errors}>Debes ingresar un email valido </span>
+                             : <span className={styles.errors2}></span>}
     </div>
     <div className={styles.numero}>
     <label className={styles.titulomensaje}>Número de contacto </label>
@@ -195,8 +195,8 @@ const Result = () => {
     <span className={styles.iconBien}>{errorsNumero.phone === "siphone" ? <FaRegCheckCircle/> : null }</span>
     </div>
     {errorsNumero.phone === "nophone" ?     
-                             <p className={styles.errors}>Debes ingresar un telefono valido, que contenga entre 7 a 14 números </p>
-                             : <p className={styles.errors2}></p>}
+                             <span className={styles.errors}>Debes ingresar un telefono valido, que contenga entre 7 a 14 números </span>
+                             : <span className={styles.errors2}></span>}
     </div>
     <div className={styles.mensajecontainer}>
     <br/>
@@ -208,8 +208,8 @@ const Result = () => {
     <span className={styles.iconBien}>{errors.message === "simensaje" ? <FaRegCheckCircle/> : null }</span>
     </div>
     {errors.message === "nomensaje" ?     
-                             <p className={styles.errorsMen}>Debes ingresar un mensaje </p>
-                             : <p className={styles.errors2}></p>}
+                             <span className={styles.errorsMen}>Debes ingresar un mensaje </span>
+                             : <span className={styles.errors2}></span>}
     </div>
     </div>
     <div className={styles.buttondiv} > 
