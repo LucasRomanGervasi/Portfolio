@@ -73,7 +73,7 @@ const Result = () => {
         return errors;
     }
     export default function Formulario(){
-        const [result, showResult] = useState(false);
+        const [result, showResult] = useState(true);
         const [errorsNumero, setErrorsNumero] = useState("");
         const [errors, setErrors] = useState({});
         const [input, setInput] = useState({
