@@ -1,5 +1,5 @@
 .titulo1{
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     width: 100%;
     font-size: 15px;
     display:flex;
@@ -254,8 +254,14 @@ textarea{
     .imagenContainer{
         display: none;
     }
+    .formulario{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 680px){
+    .formulario{
+        width: 100%;
+    }
     .nombre{
         width: 100%;
     }
@@ -310,5 +316,6 @@ textarea{
     }
     .formulario{
         width: 100%;
+        padding: 20px
     }
 }
