@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import{ init } from '@emailjs/browser';
 import { FaTimesCircle, FaRegCheckCircle, FaLastfmSquare } from "react-icons/fa";
 import Confetti from 'react-confetti'
+import perfil from "../img/perfilformulario.png"
 init("8pGs4U6nn-mwMRBjk");
 const Result = () => {
     // if(result === "enviado"){
@@ -235,6 +236,11 @@ const Result = () => {
      : null} */}
     </form>
 </div>
+</div>
+<div className={styles.imagenContainer}>
+    <img className={styles.foto}
+    src={perfil}>
+    </img>
 </div>
 </div> 
     )
