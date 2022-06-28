@@ -36,7 +36,7 @@
     margin-bottom:20px;
     margin:20px;
     transform: translateY(-10px);
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635); 
+    box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635); 
     background-color:#200696;
 }
 .frontend2{
@@ -52,7 +52,7 @@
     margin-bottom:20px;
     margin:20px;
     transform: translateY(-10px);
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635); 
+    box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635); 
 }
 .backend{
     width:250px;
@@ -67,7 +67,7 @@
     flex-direction: column;
     margin-bottom:20px;
     transform: translateY(-10px);
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635); 
+    box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635); 
 }
 .backend2{
     width:250px;
@@ -82,7 +82,7 @@
     margin-bottom:20px;
     margin:20px;
     transform: translateY(-10px);
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635); 
+    box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635); 
 }
 .lenguajes{
     width:250px;
@@ -97,7 +97,7 @@
     flex-direction: column;
     margin-bottom:20px;
     transform: translateY(-10px);
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635); 
+    box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635); 
 }
 .lenguajes2{
     width:250px;
@@ -113,7 +113,7 @@
     margin-bottom:20px;
     margin: 20px;
     transform: translateY(-10px);
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635); 
+    box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635); 
 }
 .otros{
 width:250px;
@@ -128,7 +128,7 @@ justify-content: flex-start;
 flex-direction: column;
 margin-bottom:20px;
 transform: translateY(-10px);
-box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635); 
+box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635); 
 }
 .otros2{
     width:250px;
@@ -143,7 +143,7 @@ box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635);
     flex-direction: column;
     margin-bottom:20px;
     transform: translateY(-10px);
-    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.559); 
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.559); 
 }
 .js{
     font-size: 23px;

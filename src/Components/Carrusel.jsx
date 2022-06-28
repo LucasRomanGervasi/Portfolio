@@ -8,7 +8,7 @@ import { useSelector } from "react-redux"
 export default function Carrusel(){
   const darkMode = useSelector(state => state.darkMode)
     return(
-    <div className={styles.container}>
+    <div  className={styles.container}>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
  <div class="carousel-item active">

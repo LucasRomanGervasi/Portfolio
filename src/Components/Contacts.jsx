@@ -14,7 +14,7 @@ export default function Contacts(){
 
 
       return (
-        <div>
+        <div >
           <div className={darkMode ? styles.container2 : styles.container}>
             <h2 className={styles.titulo}>CONTACTO</h2>
         </div>

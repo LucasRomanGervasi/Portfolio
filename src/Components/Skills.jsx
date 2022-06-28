@@ -9,7 +9,8 @@ export default function Skills(){
     const darkMode = useSelector(state => state.darkMode)
     return(
                 <div className={styles.abajo}>
-             <div className={styles.skills}>
+             <div  className={styles.skills}>
+                <div data-aos="fade-up">
          <h2 className={ styles.titulo}> HABILIDADES</h2>
         <div className={styles.container}>
             <div className={ darkMode? styles.frontend : styles.frontend2}> 
@@ -36,6 +37,7 @@ export default function Skills(){
             <h2 className={styles.tecnologias}> <span className={styles.git}><DiGit/></span>GIT </h2>
             <h2 className={styles.tecnologias}><span className={styles.trello}><FaTrello/></span> Trello </h2>
             <h2 className={styles.tecnologias}>    Metodología AGILE SCRUM </h2>
+            </div>
             </div>
         </div>
           {/* <div className={styles.containerfin}>

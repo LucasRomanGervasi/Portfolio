@@ -71,6 +71,8 @@
     display: flex;
     z-index: 0;
     background-color: rgb(15, 20, 78);
+    transform: translateY(-10px);
+    box-shadow: 10px 16px 10px rgba(0, 0, 0, 0.635); 
 }
 
 
