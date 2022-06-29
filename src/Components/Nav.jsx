@@ -7,7 +7,7 @@ import {  BsGithub, BsWhatsapp } from "react-icons/bs";
 import {FaLinkedinIn} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
 import {changeMode} from "../redux/actions.js"
-import LG from "../img/LG.png"
+import logo from "../img/logo.png"
 import { useSelector } from "react-redux";
 
 
@@ -33,6 +33,11 @@ export default function Nav(){
     return(
         <div className={  nav ? styles.botones : styles.botonesarriba}>
                 <div className={styles.botonera}>
+               <div className={styles.imagenContainer}>
+                  <img className={styles.foto}
+                  src={logo}>
+                  </img>
+                </div>
                     <a className={styles.boton} href="#aboutMe">SOBRE MI</a>
                     <a className={styles.boton} href="#tecnologias">HABILIDADES </a>
                     <a className={styles.boton} href="#proyect">PROYECTOS</a>
@@ -45,7 +50,11 @@ export default function Nav(){
     </div>
                 </div>
                 <div className={ nav ? styles.botonera2  : styles.botonera3 }>
-               
+                <div className={styles.imagenContainer2}>
+                  <img className={styles.foto2}
+                  src={logo}>
+                  </img>
+                </div>
                 <div className="switch-checkbox">
                <label className="switch">
             <input type="checkbox" onClick={handleClick} />
