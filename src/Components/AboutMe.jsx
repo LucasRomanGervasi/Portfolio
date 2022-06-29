@@ -13,7 +13,7 @@ export default function AboutMe(){
         <div className={styles.container}>
             <div  className={styles.arriba}>
             <div   className={ darkMode ? styles.wrapper : styles.wrapper2}>
-                <div data-aos="fade-right">
+                <div  className={styles.dataaos} data-aos="fade-right">
             <h2  className={styles.titulo1}> SOBRE MI</h2>
             <div className={styles.parrafo}>
             <p  className={styles.parrafo2}>Nací un 5 de noviembre del 2001 en Buenos Aires, Argentina.</p> 
@@ -34,7 +34,7 @@ export default function AboutMe(){
           </div>
             }
             <div  className={styles.wrapper1}>
-            <div  data-aos="fade-left">
+            <div className={styles.dataaos} data-aos="fade-left">
             <h2  className={ styles.titulo2}> EDUCACIÓN</h2>
             <div className={styles.education}>
             <Carrusel/>

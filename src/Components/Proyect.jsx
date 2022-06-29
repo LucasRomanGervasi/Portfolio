@@ -8,7 +8,7 @@ export default function Proyect(){
   const darkMode = useSelector(state => state.darkMode)
     return(
       <div  id="proyect" className={ darkMode ? styles.proyectos : styles.proyectos2} >
-        <div  data-aos="fade-right">
+        <div className={styles.dataaos} data-aos="fade-right">
         <h2  className={styles.titulo} >PROYECTOS</h2>
       <div className={styles.container1}>
         <div className={styles.containerFood}>

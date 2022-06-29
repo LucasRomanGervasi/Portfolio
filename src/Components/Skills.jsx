@@ -10,7 +10,7 @@ export default function Skills(){
     return(
                 <div className={styles.abajo}>
              <div  className={styles.skills}>
-                <div data-aos="fade-up">
+                <div className={styles.dataaos} data-aos="fade-up">
          <h2 className={ styles.titulo}> HABILIDADES</h2>
         <div className={styles.container}>
             <div className={ darkMode? styles.frontend : styles.frontend2}> 

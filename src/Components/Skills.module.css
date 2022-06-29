@@ -7,6 +7,9 @@
     justify-content: space-between;
     padding: 30px;
 }
+.dataaos{
+    width: 100%;
+}
 .container{
     height: 100%;
     display: flex;
