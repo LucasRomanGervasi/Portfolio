@@ -139,7 +139,7 @@ const Result = () => {
         } 
         setTimeout(function(){
             showResult(false)
-        }, 10000)
+        }, 8000)
         }
     return(
         <div className={styles.right}>
@@ -219,6 +219,14 @@ const Result = () => {
      {result === true ?
     <div className={styles.mensajeConfirmacion}>
          <div className={styles.confeti}>
+        <div className={styles.cuentaregresiva}>
+                    <ul className={styles.ul}>
+                        <li>3</li>
+                        <li>2</li>
+                        <li>1</li>
+                        <li></li>
+                    </ul>
+                </div>
         <Confetti
       width={2000}
       height={2000}
