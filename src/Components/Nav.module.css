@@ -1,7 +1,7 @@
 .botones {
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 60px;
     margin:0;
     padding:0;
     position: fixed;
@@ -15,7 +15,7 @@
 .botonesarriba{
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 60px;
     margin:0;
     padding:0;
     position: fixed;
@@ -84,13 +84,13 @@
 @media screen and (max-width: 650px){
     .botones2{
         height: 100%;
-        margin-top: 70px;
+        margin-top: 60px;
         background-color: rgb(0,0,20);
     }
     .botones1 {
         display: flex;
         align-items: center;
-        height: 70px;
+        height: 60px;
         margin:0;
         padding:0;
         position: fixed;
@@ -109,7 +109,7 @@
         background-color: rgba(0, 0, 20, 0.95);
         color:rgb(248, 248, 248);
         width:100%;
-        height: 70px;
+        height: 60px;
         transition: 2s;
         position:fixed;
         justify-content: flex-end;
@@ -311,7 +311,7 @@
             background: rgba(0, 0, 247, 0.474);
             color:rgb(248, 248, 248);
             width:100%;
-            height: 70px;
+            height: 60px;
             position:fixed;
             justify-content: flex-end;
             transition: 2s;
