@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     padding: 40px;
+    height: 100%;
 }
 .boton{
     font-size: 30px;
@@ -24,6 +25,8 @@
     padding: 20px;
     display:flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .container2{
     background-color: rgb(14, 9, 34);
