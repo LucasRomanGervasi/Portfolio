@@ -15,7 +15,7 @@ export default function RestoBook(){
             <a className={styles.flecha} href="/#proyect"><FiArrowLeftCircle/></a>
             </div>
             <div className={styles.wrapper}>
-            <h2 className={styles.titulo}> Resto Book</h2>
+            <h2 className={styles.titulo}> RESTO BOOK</h2>
             <h1 className={styles.descripcion}>DESCRIPCIÓN</h1>
             <div className={styles.parrafo}>
             <p className={styles.parrafo2}>
