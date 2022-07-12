@@ -26,7 +26,7 @@ export default function Home(){
                     </ul>
                 </div>
                  <div className={styles.wrapper1}>
-                    <a  className={styles.a} href='https://drive.google.com/file/d/1FwS9U5Kl-vFHUs1og10vgbnOr6H_FoNk/view?usp=sharing'>DESCARGAR CV </a>
+                    <a  className={styles.a} href='https://drive.google.com/file/d/1joIfXts-MCdJ0yE5P9vO8n1f_-bQQVT3/view?usp=sharing'>DESCARGAR CV </a>
                     {/* <span className={styles.cv}> <FiDownload/></span> */}
                     </div>
                 </div>
