@@ -1,14 +1,14 @@
 .proyectos2{
     z-index: 8;
     background-color: #ffffff;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 .dataaos{
     width: 100%;
 }
 .proyectos{
     z-index: 0;
-    padding-top: 20px;
+    padding-top: 40px;
     background-color: #000000;
 }
 .container1{
@@ -22,7 +22,7 @@
 
 .titulo{
     color: rgb(0,0,60);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     width: 100%;
     display:flex;
