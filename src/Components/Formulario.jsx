@@ -47,26 +47,30 @@ function validateNumero(input) {
 }
 function validate(input) {
   let errors = {};
-  if (!expresiones.nombre.test(input.fullName) || !input.fullName) {
+  if (!expresiones.nombre.test(input.fullName) || input.fullName === "") {
     errors.fullName = "nonombre";
+    errors.error = true
   }
   if (expresiones.nombre.test(input.fullName)) {
     errors.fullName = "sinombre";
   }
-  if (!expresiones.nombre.test(input.last) || !input.last) {
+  if (!expresiones.nombre.test(input.last) || input.last === "") {
     errors.last = "noapellido";
+    errors.error = true
   }
   if (expresiones.nombre.test(input.last)) {
     errors.last = "siapellido";
   }
-  if (!expresiones.correo.test(input.email) || !input.email) {
+  if (!expresiones.correo.test(input.email) || input.email === "") {
     errors.email = "noemail";
+    errors.error = true
   }
   if (expresiones.correo.test(input.email)) {
     errors.email = "siemail";
   }
-  if (!input.message) {
+  if (input.message === "") {
     errors.message = "nomensaje";
+    errors.error = true
   }
   if (input.message) {
     errors.message = "simensaje";
@@ -76,7 +80,7 @@ function validate(input) {
 export default function Formulario() {
   const [result, showResult] = useState(false);
   const [errorsNumero, setErrorsNumero] = useState("");
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({ error : true});
   const [input, setInput] = useState({
     fullName: "",
     last: "",
@@ -104,21 +108,25 @@ export default function Formulario() {
       })
     );
   }
+  console.log(errors)
   const sendEmail = (event) => {
     event.preventDefault();
     if (
-      errors.email === "noemail" ||
-      errors.fullName === "nonombre" ||
-      errorsNumero.phone === "nophone" ||
-      errors.last === "noapellido" ||
-      errors.message === "nomensaje"
-    ) {
+      errors.email ==="noemail" ||
+      errors.fullName ==="nonombre" ||
+      errorsNumero.phone ==="nophone" ||
+      errors.last ==="noapellido" ||
+      errors.message ==="nomensaje" ||
+      errors.error === true
+    ){
     } else if (
-      errors.email === "" ||
-      errors.fullName === "" ||
-      errors.apellido === "" ||
-      errors.message === ""
-    ) {
+      errors.email ==="" ||
+      errors.fullName ==="" ||
+      errorsNumero.phone ==="" ||
+      errors.last ==="" ||
+      errors.message ==="" 
+    )
+    {
       setErrors({
         fullName: "nonombre",
         last: "noapellido",
@@ -126,6 +134,7 @@ export default function Formulario() {
         message: "nomensaje",
       });
     } else {
+      showResult(true);
       emailjs
         .sendForm(
           "service_lhmycj9",
@@ -142,7 +151,6 @@ export default function Formulario() {
           }
         );
       event.target.reset();
-      showResult(true);
       setInput({
         fullName: "",
         last: "",
