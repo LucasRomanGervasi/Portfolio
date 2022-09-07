@@ -1,442 +1,441 @@
-.FoodApp{
-    background-color: rgb(0, 6, 97);
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+.FoodApp {
+  background-color: rgb(0, 6, 97);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
-.boton{
-    font-size: 30px;
+.boton {
+  font-size: 30px;
 }
-.flecha{
-    color: #000000;
-    display: flex;
-    padding:0px;
-    margin-left: 0;
-    justify-content: left;
+.flecha {
+  color: #000000;
+  display: flex;
+  padding: 0px;
+  margin-left: 0;
+  justify-content: left;
 }
-.container{
-    background-color: rgb(246, 246, 246);
-    height: 100%;
-    transform: translateY(-10px);
-    box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635); 
-    width: 90%;
-    border-radius: 20px;
-    padding:50px 20px 50px 20px;
-    display:flex;
-    flex-wrap: wrap;
+.container {
+  background-color: rgb(246, 246, 246);
+  height: 100%;
+  transform: translateY(-10px);
+  box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635);
+  width: 95%;
+  border-radius: 20px;
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
 
-    align-items: center;
+  align-items: center;
 }
-.container2{
-    background-color: rgb(14, 9, 34);
+.container2 {
+  background-color: rgb(14, 9, 34);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.titulo1 {
+  color: rgb(0, 0, 10);
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.descripcion {
+  color: rgb(0, 0, 10);
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.parrafo2 {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: rgb(45, 45, 45);
+  font-family: "Merriweather Sans", sans-serif;
+}
+.titulo {
+  color: rgb(5, 5, 80);
+  font-size: 40px;
+  font-weight: bolder;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.parrafo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px 0px 50px;
+}
+.spoo {
+  color: rgb(0, 0, 156);
+}
+.imgFoodApp {
+  width: 100%;
+  height: 70%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.imgRestoApp {
+  width: 100%;
+  height: 70%;
+  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.foto {
+  width: 500px;
+  border-radius: 10px;
+  height: 280px;
+}
+.tecnologias {
+  color: rgb(242, 243, 244);
+  font-size: 13px;
+}
+.tecnologiascontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.tecnologiascontainer2 {
+  border-radius: 10px;
+  padding: 20px;
+  height: 200px;
+  margin: 20px;
+  width: 200px;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635);
+  transform: translateY(-10px);
+  background-color: rgb(0, 0, 20);
+}
+.wrapper2 {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.titulo2 {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgb(242, 243, 244);
+  justify-content: center;
+}
+
+.html {
+  font-size: 23px;
+  color: rgb(255, 142, 37);
+}
+.css {
+  font-size: 23px;
+  color: rgb(24, 176, 196);
+}
+.react {
+  font-size: 23px;
+  color: rgb(24, 176, 196);
+}
+.redux {
+  font-size: 20px;
+  color: rgb(128, 238, 137);
+}
+.js {
+  font-size: 23px;
+  color: rgb(57, 146, 65);
+}
+.sql {
+  font-size: 21px;
+  color: rgb(179, 231, 233);
+}
+.github {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.firebase {
+  font-size: 23px;
+  color: rgb(255, 208, 54);
+}
+.codigo:hover {
+  transform: scale(1.05);
+  color: white;
+}
+.iconogit {
+  font-size: 22px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.codigo {
+  margin-top: 40px;
+  background-color: rgb(0, 0, 60);
+  width: 280px;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.img {
+  height: 100%;
+  border-radius: 5px;
+  width: 80%;
+  align-items: center;
+}
+.imgcontainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.git {
+  font-size: 23px;
+  color: rgb(235, 99, 99);
+}
+.trello {
+  font-size: 20px;
+  color: rgb(24, 176, 196);
+}
+@media screen and (min-width: 1800px) {
+  .parrafo2 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .parrafo2 {
+    width: 70%;
+  }
+  .img {
+    height: 50%;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .container {
+    margin: 0;
+    border-radius: 20px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    margin: 0;
+    border-radius: 20px;
+    width: 80%;
+  }
+  .parrafo2 {
+    width: 90%;
+    font-size: 10px;
+  }
+  .fotocontainer {
+    width: 100%;
+  }
+  .foto {
+    width: 100%;
+    height: 150px;
+  }
+  .imgcontainer {
+    width: 100%;
     height: 100%;
-    padding: 20px;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.titulo1{
-    color: rgb(0, 0, 10);
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
+  }
+  .imgRestoApp {
     width: 100%;
-    margin-bottom: 20px;
-    align-items: center;
-}
-.descripcion{
-    color: rgb(0, 0, 10);
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-.wrapper{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.parrafo2{
-    font-size: 15px;
-    margin-bottom: 30px;
-    color:rgb(45, 45, 45);
-    font-family: 'Merriweather Sans', sans-serif;
-}
-.titulo{
-    color: rgb(5, 5, 80);
-    font-size: 40px;
-    font-weight:  bolder ;
-    display: flex;
-    width: 100%;
-    margin-bottom: 20px;
-    margin-top:20px;
-    justify-content: center;
-}
-.parrafo{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 50px 0px 50px;
-}
-.spoo{
-    color: rgb(0, 0, 156);
-}
-.imgFoodApp{
-    width: 100%;
-    height: 70%;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.imgRestoApp{
-    width: 100%;
-    height: 70%;
-    margin-top: 40px;
+    height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
-}
-
-.foto{
-    width: 500px;
-    border-radius: 10px;
-    height: 280px;
-}
-.tecnologias{
-    color:  rgb(242, 243, 244);
-    font-size: 13px;
-}
-.tecnologiascontainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.tecnologiascontainer2{
-    border-radius:10px;
-    padding: 20px;
-    height:200px;
-    margin: 20px;
-    width:200px;
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635); 
-    transform: translateY(-10px);
-    background-color:rgb(0,0, 20);
-}
-.wrapper2{
-    margin-top: 40px;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-}
-.titulo2{ 
-    margin-top:10px;
+  }
+  .imgFoodApp {
+    width: 100%;
+    height: 100%;
+  }
+  .codigo {
     font-size: 12px;
-    color:  rgb(242, 243, 244);
-    justify-content: center;
-}
-
-
-.html{
-    font-size: 23px;
-    color: rgb(255, 142, 37);
-}
-.css{
-    font-size: 23px;
-    color: rgb(24, 176, 196);
-}
-.react{
-    font-size: 23px;
-    color: rgb(24, 176, 196);
-}
-.redux{
-    font-size: 20px;
-    color: rgb(128, 238, 137);
-}
-.js{
-    font-size: 23px;
-    color: rgb(57, 146, 65);
-}
-.sql{
-    font-size: 21px;
-    color: rgb(179, 231, 233);
-}
-.github{
+  }
+  .wrapper2 {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top:20px;
-}
-.firebase{
-    font-size: 23px;
-    color: rgb(255, 208, 54);
-}
-.codigo:hover{
-    transform: scale(1.05);
-    color: white;
-}
-.iconogit{
-    font-size: 22px;
-    color: white;
-    display:flex;
-    align-items: center;
-}
-.codigo{
-    margin-top: 40px;
-    background-color: rgb(0,0, 60);
-    width: 280px;
-    display: flex;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    font-size: 14px;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.img{
-    height: 100%;
-    border-radius: 5px;
-    width: 80%;
-    align-items: center;
-}
-.imgcontainer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: space-evenly;
-}
-.git{
-    font-size: 23px;
-    color: rgb(235, 99, 99);
-}
-.trello{
-    font-size: 20px;
-    color: rgb(24, 176, 196);
-}
-@media screen and (min-width: 1800px){
-    .parrafo2{
-        width: 50%;
-    }
-}
-@media screen and (min-width: 1400px){
-    .parrafo2{
-        width: 70%;
-    }
-    .img{
-        height: 50%;
-        width: 60%;
-    }
-}
-@media screen and (max-width: 950px){
-    .container{
-        margin: 0;
-        border-radius: 20px;
-        width: 80%;
-    }
-}
-@media screen and (max-width: 720px){
-    .container{
-        margin: 0;
-        border-radius: 20px;
-        width: 80%;
-    }
-    .parrafo2{
-        width: 90%;
-        font-size: 10px;
-    }
-    .fotocontainer{
-        width:100%
-    }
-    .foto{
-        width: 100%;
-        height: 150px;
-    }
-    .imgcontainer{
-        width: 100%;
-        height: 100%;
-    }
-    .imgRestoApp{
-        width: 100%;
-        height: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .imgFoodApp{
-        width: 100%;
-        height: 100%;
-    }
-    .codigo{
-        font-size: 12px;
-    }
-    .wrapper2{
-        width: 100%;
-    }
-    .github{
-        font-size:13px
-    }
-    .descripcion{
-        font-size: 12px;
-    }
-    .titulo1{
-        margin-left: 0px;
-        font-size:12px;
-    }
-    .parrafo2{
-        width: 90%;
-        font-size: 10px;
-        color:rgb(45, 45, 45);
-        font-family: 'Merriweather Sans', sans-serif;
-    }
-    .parrafo{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 0px 0px 0px;
-    }
-    .tecnologiascontainer2{
-        font-size:12px;
-    }
-    .tecnologias{
-        font-size: 10px;
-    }
-    .html{
-        font-size: 19px;
-        color: rgb(255, 142, 37);
-    }
-    .css{
-        font-size: 19px;
-        color: rgb(24, 176, 196);
-    }
-    .react{
-        font-size: 19px;
-        color: rgb(24, 176, 196);
-    }
-    .redux{
-        font-size: 17px;
-        color: rgb(128, 238, 137);
-    }
-    .js{
-        font-size: 20px;
-        color: rgb(57, 146, 65);
-    }
-    .sql{
-        font-size: 19px;
-        color: rgb(179, 231, 233);
-    }
-    .github{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top:17px;
-    }
-    .firebase{
-        font-size: 19px;
-        color: rgb(255, 208, 54);
-    }
-    .codigo:hover{
-        transform: scale(1.05);
-        color: white;
-    }
-    .iconogit{
-        font-size: 18px;
-        color: white;
-        display:flex;
-        align-items: center;
-    }
-    .tecnologiascontainer2{
-        border-radius:10px;
-        padding: 20px;
-        height:200px;
-        margin:20px;
-        width:200px;
-        box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635); 
-        transform: translateY(-10px);
-        background-color:rgb(0,0, 20);
-    }
-    .img{
-        width: 80%;
-        height:200px
-    }
-}
-@media screen and (max-width: 420px){
-    .img{
-        width: 100%;
-        height: 150px;
-        margin-bottom: 20px;
-    }
-    .FoodApp{
-        background-color: rgb(22, 6, 80);
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-    }
-    .container{
-        background-color: rgb(246, 246, 246);
-        height: 70%;
-        transform: translateY(-10px);
-        box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635); 
-        width: 90%;
-        border-radius: 20px;
-        padding: 20px;
-        display:flex;
-        flex-wrap: wrap;
-    }
-    .titulo{    
-        color: rgb(0, 0, 10);
-        font-size: 30px;
-        font-weight: bold;
-        display: flex;
-        width: 100%;
-        margin-bottom: 20px;
-        margin-top:20px;
-        justify-content: center;
-}
-.parrafo{
+  }
+  .github {
+    font-size: 13px;
+  }
+  .descripcion {
+    font-size: 12px;
+  }
+  .titulo1 {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .parrafo2 {
+    width: 90%;
+    font-size: 10px;
+    color: rgb(45, 45, 45);
+    font-family: "Merriweather Sans", sans-serif;
+  }
+  .parrafo {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     padding: 0px 0px 0px 0px;
+  }
+  .tecnologiascontainer2 {
+    font-size: 12px;
+  }
+  .tecnologias {
+    font-size: 10px;
+  }
+  .html {
+    font-size: 19px;
+    color: rgb(255, 142, 37);
+  }
+  .css {
+    font-size: 19px;
+    color: rgb(24, 176, 196);
+  }
+  .react {
+    font-size: 19px;
+    color: rgb(24, 176, 196);
+  }
+  .redux {
+    font-size: 17px;
+    color: rgb(128, 238, 137);
+  }
+  .js {
+    font-size: 20px;
+    color: rgb(57, 146, 65);
+  }
+  .sql {
+    font-size: 19px;
+    color: rgb(179, 231, 233);
+  }
+  .github {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+  }
+  .firebase {
+    font-size: 19px;
+    color: rgb(255, 208, 54);
+  }
+  .codigo:hover {
+    transform: scale(1.05);
+    color: white;
+  }
+  .iconogit {
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .tecnologiascontainer2 {
+    border-radius: 10px;
+    padding: 20px;
+    height: 200px;
+    margin: 20px;
+    width: 200px;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.635);
+    transform: translateY(-10px);
+    background-color: rgb(0, 0, 20);
+  }
+  .img {
+    width: 80%;
+    height: 200px;
+  }
 }
+@media screen and (max-width: 420px) {
+  .img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .FoodApp {
+    background-color: rgb(22, 6, 80);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+  }
+  .container {
+    background-color: rgb(246, 246, 246);
+    height: 70%;
+    transform: translateY(-10px);
+    box-shadow: 10px 16px 16px rgba(0, 0, 0, 0.635);
+    width: 95%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .titulo {
+    color: rgb(0, 0, 10);
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .parrafo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+  }
 }
-@media screen and (max-width: 300px){
-    .parrafo{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 0px 0px 0px;
-    }
-    .img{
-        width: 220px;
-        height: 150px;
-        margin-bottom: 20px;
-    }
-    .container{
-        width: 98%;
-    }
-    .titulo{    
-        color: rgb(0, 0, 10);
-        font-size: 20px;
-        font-weight: bold;
-        display: flex;
-        width: 100%;
-        margin-bottom: 20px;
-        margin-top:20px;
-        justify-content: center;
-}
+@media screen and (max-width: 300px) {
+  .parrafo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+  }
+  .img {
+    width: 220px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .container {
+    width: 98%;
+  }
+  .titulo {
+    color: rgb(0, 0, 10);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+  }
 }

@@ -1,319 +1,334 @@
-.home{
-    height: 100%;
-    width: 100%;
-    background: url("../img/thumb-1920-595000.jpg");
-    background-size: 100% 100%;
-
+.home {
+  height: 100%;
+  width: 100%;
+  background: url("../img/thumb-1920-595000.jpg");
+  background-size: 100% 100%;
 }
 
-.container{
-    height: 100%;
-    background-color: rgba(11, 11, 181, 0.576);
-    display: flex;
-    object-fit:contain;
-    flex-wrap: wrap;
-    transition: 0.9s;
-    align-items: center;
-    padding:40px 40px 10px 40px;
-    justify-content: center;
+.container {
+  height: 100%;
+  background-color: rgba(11, 11, 181, 0.576);
+  display: flex;
+  object-fit: contain;
+  flex-wrap: wrap;
+  transition: 0.9s;
+  align-items: center;
+  padding: 40px 40px 10px 40px;
+  justify-content: center;
 }
-.container2{
-    height: 100%;
-    background-color: rgba(9, 9, 121, 0.712);
-    display: flex;
-    transition: 0.9s;
-    object-fit:contain;
-    flex-wrap: wrap;
-    align-items: center;
-    padding:40px 40px 10px 40px;
-    justify-content: center;
+.container2 {
+  height: 100%;
+  background-color: rgba(9, 9, 121, 0.712);
+  display: flex;
+  transition: 0.9s;
+  object-fit: contain;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 40px 10px 40px;
+  justify-content: center;
 }
-.left{
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    height: 100%;
-    justify-content: space-around;
-    width: 50%;
-    margin-top: 80px; 
+.left {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  height: 100%;
+  justify-content: space-around;
+  width: 50%;
+  margin-top: 80px;
 }
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content:initial;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: initial;
 }
-.parrafo{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width:90%;
+.parrafo {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
 }
-.titulo1{
-    font-size: 30px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    color: rgb(253, 254, 254)
-    
+.titulo1 {
+  font-size: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: rgb(253, 254, 254);
 }
-.titulo{
-    color:  rgb(253, 254, 254);
-    font-size: 70px;    
+.titulo {
+  color: rgb(253, 254, 254);
+  font-size: 70px;
 }
-.titulo2{
-    color:  rgb(253, 254, 254);
-    font-size: 14px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.titulo2 {
+  color: rgb(253, 254, 254);
+  font-size: 14px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.developer{
-    font-size: 40px;
-    flex-wrap: wrap;
-}
-
-.right{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin-top: 70px;
-    justify-content: space-around;
-    border-bottom: 10px;
-}
-.imagenContainer{
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-.foto{
-    background-color: rgb(0,0,20,0.51);
-    padding-top: 0px;
-    border-radius: 55% 100% 60%;
-    padding-right: 0px ;
-    width: 100%;
-    height:450px;
-    }
-
-.wrapper1{
-    padding:10px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:left;
-
-}
-.a{
-    border-radius: 6px;
-    padding:10px;
-    width: 200px;
-    text-align: center;
-    border: solid rgba(245, 245, 245) 0.1px ;
-    text-decoration: none;
-    background: rgba(17, 17, 81, 0.735);
-    box-shadow: none;
-    transition:1s;
-    font-size: 13px;
-    color:rgb(245, 245, 245)
+.developer {
+  font-size: 40px;
+  flex-wrap: wrap;
 }
 
-.a:hover{
-    transform:scale(1.08);
-    background: rgba(25, 25, 221, 0.311);
-    color:rgb(245, 245, 245)
+.right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 70px;
+  justify-content: space-around;
+  border-bottom: 10px;
 }
-.cv{
-    font-size: 15px;
-    color:rgb(245, 245, 245)
+.imagenContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.foto {
+  background-color: rgb(0, 0, 20, 0.51);
+  padding-top: 0px;
+  border-radius: 55% 100% 60%;
+  padding-right: 0px;
+  width: 100%;
+  height: 450px;
+}
+
+.wrapper1 {
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.a {
+  border-radius: 6px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border: solid rgba(245, 245, 245) 0.1px;
+  text-decoration: none;
+  background: rgba(17, 17, 81, 0.735);
+  box-shadow: none;
+  transition: 1s;
+  font-size: 13px;
+  color: rgb(245, 245, 245);
+}
+
+.a:hover {
+  transform: scale(1.08);
+  background: rgba(25, 25, 221, 0.311);
+  color: rgb(245, 245, 245);
+}
+.cv {
+  font-size: 15px;
+  color: rgb(245, 245, 245);
 }
 .scrollIcon {
+  border-radius: 50%;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  border-radius: 2em;
+  border: solid white 2px;
+  width: 1.4rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.bola {
+  background-color: white;
+  width: 30px;
+  border-radius: 50%;
+  height: 10px;
+  animation-name: mover;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.scrollcontainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  background-color: rgba(11, 11, 181, 0.576);
+  font-size: 22px;
+  transition: 0.9s;
+}
+.scrollcontainer2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  background-color: rgba(9, 9, 121, 0.712);
+  font-size: 22px;
+  transition: 0.9s;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(16px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .imagenContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .foto {
+    background-color: rgb(0, 0, 20, 0.51);
+    padding-top: 0px;
+    border-radius: 55% 100% 60%;
+    padding-right: 0px;
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .right {
+    display: none;
+  }
+  .left {
+    padding: 20px;
+    font-size: 40px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .titulo {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .home {
+    background: url("../img/fondomobile.jpg");
+    background-size: 100% 100%;
+  }
+  .container {
+    padding: 5px;
+    height: 60%;
+  }
+  .container2 {
+    padding: 5px;
+    height: 60%;
+  }
+  .left {
+    padding: 30px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .titulo {
+    font-size: 40px;
+  }
+  .titulo1 {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .wrapper1 {
+    width: 120px;
+    height: 5px;
+  }
+  .a {
+    text-decoration: none;
+    padding: 4px;
+    width: 200px;
+    font-size: 10px;
+  }
+  .scrollIcon {
     border-radius: 50%;
-    height: 40px;
+    height: 30px;
     color: rgb(255, 255, 255);
     border-radius: 2em;
     border: solid white 2px;
-    width: 1.4rem;
-    display:flex;
+    width: 1.2rem;
+    display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 5px;
-}
-.bola{
+  }
+  .bola {
     background-color: white;
-    width: 30px;
+    width: 20px;
     border-radius: 50%;
-    height: 10px;
+    height: 6px;
     animation-name: mover;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    }
-.scrollcontainer{
+  }
+  .scrollcontainer {
     display: flex;
     justify-content: center;
     margin-bottom: 6px;
-    background-color: rgba(11, 11, 181, 0.576);
-    font-size: 22px; 
-    transition: 0.9s;
-}
-.scrollcontainer2{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 6px;
-    background-color: rgba(9, 9, 121, 0.712);
-    font-size: 22px; 
-    transition: 0.9s;
-}
-@keyframes mover{
-    0%{
-        transform: translateY(20%);
-    }
-    100%{
-        transform: translateY(16px);
-    }
-}
-@media screen and (max-width: 1000px){
-    .imagenContainer{
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
-    .foto{
-        background-color: rgb(0,0,20,0.51);
-        padding-top: 0px;
-        border-radius: 55% 100% 60%;
-        padding-right: 0px ;
-        width: 100%;
-        height:350px;
-        }
-}
-    @media screen and (max-width: 850px){
-    .right{
-        display: none;
-    }
-    .left{
-        padding: 20px;
-        font-size: 40px;
-        justify-content: center;
-        width: 100%;
-        height: 100%
-    }
-}
-@media screen and (max-width: 600px){
-    .titulo{
-        font-size: 50px;
-    }
-}
-@media screen and (max-width: 460px){
-    .home{
-        background: url("../img/fondomobile.jpg");
-        background-size: 100% 100%;
-    }
-    .container{
-        padding: 5px;
-        height: 60%;
-    }
-    .container2{
-        padding: 5px;
-        height: 60%;
-    }
-    .left{
-        padding: 30px;
-        justify-content: center;
-        width: 100%;
-        height: 100%
-    }
-    .titulo{
-        font-size: 40px;
-    }
-    .titulo1{
-        margin-top:30px;
-        font-size: 20px;
-    }
-    .wrapper1{
-        width: 120px;
-        height: 5px;
-    }
-    .a{
-        text-decoration: none;
-        padding: 4px;
-        width: 200px;
-        font-size: 10px;
-    }
-        .scrollIcon {
-            border-radius: 50%;
-            height: 30px;
-            color: rgb(255, 255, 255);
-            border-radius: 2em;
-            border: solid white 2px;
-            width: 1.2rem;
-            display:flex;
-            justify-content: center;
-            margin-bottom: 10px;
-            padding: 5px;
-        }
-        .bola{
-            background-color: white;
-            width: 20px;
-            border-radius: 50%;
-            height: 6px;
-            animation-name: mover;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            }
-        .scrollcontainer{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 6px;
-            font-size: 22px; 
-        }
+    font-size: 22px;
+  }
 }
 
-.desarrolladorcontainer{
-    display: flex;
-    width:100%;
-    height: 40px;
-    color: rgb(227, 247, 255);
-    line-height: 40px;
-    top:0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    font-size:22px;
-    font-weight: bold;
-    margin-bottom: 5px;
+.desarrolladorcontainer {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  color: rgb(227, 247, 255);
+  line-height: 40px;
+  top: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-ul{
-    text-decoration: none;
-    margin: 0;
-    margin-left: 8px;
-    text-decoration: none;
-    list-style: none;
-    animation: cambiar 8s infinite;
+ul {
+  text-decoration: none;
+  margin: 0;
+  margin-left: 8px;
+  text-decoration: none;
+  list-style: none;
+  animation: cambiar 8s infinite;
 }
 
 @keyframes cambiar {
-    0%{margin-top: 0;}
-    20%{margin-top: 0;}
-    25%{margin-top: -40px;}
-    50%{margin-top: -40px;}
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -40px;
+  }
 
-    55%{margin-top: -80px;}
-    80%{margin-top: -80px;}
+  55% {
+    margin-top: -80px;
+  }
+  80% {
+    margin-top: -80px;
+  }
 
-    85%{margin-top: -40px;}
-    95%{margin-top: -40px;}
+  85% {
+    margin-top: -40px;
+  }
+  95% {
+    margin-top: -40px;
+  }
 
-    100%{margin-top: 0;}
-
+  100% {
+    margin-top: 0;
+  }
 }
 
-@media screen and (max-width: 400px){
-    .desarrolladorcontainer{
-        font-size: 16px;
-    }
+@media screen and (max-width: 400px) {
+  .desarrolladorcontainer {
+    font-size: 16px;
+  }
 }
 
-@media screen and (max-width: 325px){
-    .desarrolladorcontainer{
-        display: none;
-    }
+@media screen and (max-width: 325px) {
+  .desarrolladorcontainer {
+    display: none;
+  }
 }

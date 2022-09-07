@@ -1,370 +1,368 @@
 .botones {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 20, 0.182);
+  transition: 2s;
+}
+.imagenContainer {
+}
+.foto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.imagenContainer2 {
+  width: 100%;
+  display: flex;
+  margin: 10px;
+}
+.foto2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.botonesarriba {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  flex-wrap: wrap;
+  transition: 2s;
+  background: rgba(0, 0, 20, 0.95);
+}
+
+.boton {
+  border: none;
+  color: rgb(175, 175, 175);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+.botonera {
+  align-items: center;
+  right: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.boton {
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  margin-left: 0px;
+}
+
+.boton::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(248, 248, 248);
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.9s;
+}
+.boton:hover {
+  color: rgb(248, 248, 248);
+}
+.boton:hover::after {
+  width: 100%;
+}
+.botonera2,
+.botonera3 {
+  display: none;
+}
+
+.fin {
+  border-bottom: solid rgb(175, 175, 175) 1px;
+  display: none;
+  width: 40%;
+  margin-top: 50px;
+}
+.botonBurger {
+  display: none;
+}
+.redes {
+  display: z;
+}
+
+@media screen and (max-width: 650px) {
+  .botones2 {
+    height: 100%;
+    margin-top: 70px;
+    background-color: rgb(0, 0, 20);
+  }
+  .botones1 {
     display: flex;
     align-items: center;
     height: 70px;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     position: fixed;
-    width:100%;
-    z-index: 2;
-    flex-wrap: wrap;
-    background: rgba(0, 0, 20, 0.182);
-    transition: 2s;
-}
-.imagenContainer{
-}
-.foto{
-    width: 50px;
-    height:50px;
-    border-radius: 50%;
-}
-.imagenContainer2{
     width: 100%;
-    display: flex;
-    margin: 10px;
-
-}
-.foto2{
-    width: 50px;
-    height:50px;
-    border-radius: 50%;
-}
-.botonesarriba{
-    display: flex;
-    align-items: center;
-    height: 70px;
-    margin:0;
-    padding:0;
-    position: fixed;
-    width:100%;
     z-index: 2;
     flex-wrap: wrap;
     transition: 2s;
-    background: rgba(0, 0, 20, 0.95);
+  }
+  .botonera {
+    display: none;
+  }
 
-}
-
-.boton{
-    border: none;
-    color: rgb(175, 175, 175);
-    text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
-}
-.botonera{
-    align-items: center;
-    right: 0;
+  .botonera3 {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-}
-.boton{
-    position: relative;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    margin-left: 0px;
-}
-
-.boton::after{
-    content: "";
-    position: absolute;
-    background-color: rgb(248, 248, 248);
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -5px;
-    transition: 0.9s;
-}
-.boton:hover{
+    align-items: center;
+    background-color: rgba(0, 0, 20, 0.95);
     color: rgb(248, 248, 248);
-}
-.boton:hover::after{
     width: 100%;
-}
-.botonera2, .botonera3{
-    display: none;
-}
-
-.fin{
-    border-bottom: solid  rgb(175, 175, 175) 1px;
-    display: none;
-    width: 40%;
+    height: 70px;
+    transition: 2s;
+    position: fixed;
+    justify-content: flex-end;
+  }
+  .containerBurger {
+    background: rgba(4, 4, 239, 0.952);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    width: 100%;
+    position: fixed;
+  }
+  .fin {
+    display: flex;
+  }
+  .containerBurger2 {
+    background: rgba(4, 4, 73, 0.98);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    width: 100%;
+    position: fixed;
+  }
+  .botonBurger {
     margin-top: 50px;
-}
-.botonBurger{
-    display: none;
-}
-.redes{
-    display: z;
-}
+    color: rgb(175, 175, 175);
+    display: flex;
+  }
+  .botonBurger:hover {
+    color: rgb(248, 248, 248);
+  }
+  .wpp:hover {
+    color: rgb(248, 248, 248);
+  }
+  .instagram:hover {
+    color: rgb(248, 248, 248);
+  }
+  .github:hover {
+    color: rgb(248, 248, 248);
+  }
+  .linkedin:hover {
+    color: rgb(248, 248, 248);
+  }
+  .redes {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+  }
+  .wpp {
+    font-size: 23px;
+    padding: 8px;
+    color: rgb(175, 175, 175);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .a2 {
+    padding: 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .github {
+    font-size: 23px;
+    padding: 5px;
+    color: rgb(175, 175, 175);
+    display: flex;
+    align-items: center;
+  }
+  .linkedin {
+    font-size: 23px;
+    padding: 5px;
+    color: rgb(175, 175, 175);
+    display: flex;
+    align-items: center;
+  }
+  .instagram {
+    font-size: 23px;
+    padding: 5px;
+    color: rgb(175, 175, 175);
+    display: flex;
+    align-items: center;
+  }
+  .x {
+    color: aliceblue;
+    z-index: 2;
+  }
+  .botonera2 {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 247, 0.474);
+    color: rgb(248, 248, 248);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    justify-content: flex-end;
+    transition: 2s;
+  }
+  .burger {
+    margin-bottom: 5px;
+    right: 0;
+    height: 50px;
+  }
+  .botoncontainer {
+    height: 50px;
+  }
+  .burger .botoncontainer {
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    width: 50px;
+    outline: none;
+  }
+  .burger .botoncontainer span {
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    border-radius: 5px;
+    background: white;
+    display: block;
+    border: none;
+    width: 60%;
+    margin: 5px auto;
+    height: 4px;
+  }
 
-@media screen and (max-width: 650px){
-    .botones2{
-        height: 100%;
-        margin-top: 70px;
-        background-color: rgb(0,0,20);
-    }
-    .botones1 {
-        display: flex;
-        align-items: center;
-        height: 70px;
-        margin:0;
-        padding:0;
-        position: fixed;
-        width:100%;
-        z-index: 2;
-        flex-wrap: wrap;
-        transition: 2s;
-    }
-    .botonera{
-        display: none;
-    }
+  .burger .botoncontainer .topline {
+    animation-name: top-line-animation-close;
+  }
+  .burger .botoncontainer .middleline {
+    animation-name: middle-line-animation-close;
+  }
+  .burger .botoncontainer .bottomline {
+    animation-name: bottom-line-animation-close;
+  }
+  .burger .botoncontainer .topline2 {
+    animation-name: top-line-animation;
+  }
+  .burger .botoncontainer .middleline2 {
+    animation-name: middle-line-animation;
+  }
+  .burger .botoncontainer .bottomline2 {
+    animation-name: bottom-line-animation;
+  }
 
-    .botonera3{
-        display: flex;
-        align-items: center;
-        background-color: rgba(0, 0, 20, 0.95);
-        color:rgb(248, 248, 248);
-        width:100%;
-        height: 70px;
-        transition: 2s;
-        position:fixed;
-        justify-content: flex-end;
+  @keyframes top-line-animation {
+    50%,
+    100% {
+      margin: 0 auto;
+      width: 55%;
+      transform: translateY(5px) rotate(45deg);
     }
-    .containerBurger{
-        background: rgba(4, 4, 239, 0.952);
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin-top:0px;
-        width: 100%;
-        position:fixed;
-    
+  }
+  @keyframes middle-line-animation {
+    20%,
+    100% {
+      margin: 0 auto;
+      transform: translateY(-2px) rotate(-45deg);
+      opacity: 0;
     }
-    .fin{
-        display: flex;
+  }
+  @keyframes bottom-line-animation {
+    50%,
+    100% {
+      margin: 0 auto;
+      float: top;
+      width: 55%;
+      transform: translateY(-2px) rotate(-45deg);
     }
-    .containerBurger2{
-        background: rgba(4, 4, 73, 0.98);
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin-top:0px;
-        width: 100%;
-        position:fixed;
-    
+  }
+  @keyframes top-line-animation-close {
+    50%,
+    100% {
+      transform: translateY(0px) rotate(180deg);
     }
-    .botonBurger{
-        margin-top: 50px;
-        color: rgb(175, 175, 175);
-       display: flex;
-
+  }
+  @keyframes middle-line-animation-close {
+    20%,
+    100% {
+      transform: translateY(0px) rotate(180deg);
     }
-    .botonBurger:hover{
-        color: rgb(248, 248, 248);
+  }
+  @keyframes bottom-line-animation-close {
+    50%,
+    100% {
+      transform: translateY(0) rotate(0deg);
     }
-    .wpp:hover{
-        color: rgb(248, 248, 248);
+  }
+  @media screen and (max-width: 460px) {
+    .botonera2 {
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 247, 0.474);
+      color: rgb(248, 248, 248);
+      width: 100%;
+      height: 70px;
+      position: fixed;
+      justify-content: flex-end;
+      transition: 2s;
     }
-    .instagram:hover{
-        color: rgb(248, 248, 248);
+    .containerBurger {
+      background: rgba(4, 4, 239, 0.952);
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0px;
+      width: 100%;
+      position: fixed;
     }
-    .github:hover{
-        color: rgb(248, 248, 248);
+    .containerBurger2 {
+      background: rgba(3, 3, 59, 0.952);
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0px;
+      width: 100%;
+      position: fixed;
     }
-    .linkedin:hover{
-        color: rgb(248, 248, 248);
+    .botonBurger {
+      margin-top: 30px;
     }
-    .redes{
-        width: 100%;
-        display: flex;
-        padding-top:30px;
-        justify-content: center;
+    .redes {
+      margin-bottom: 30px;
     }
-    .wpp{
-        font-size: 23px;
-        padding: 8px;
-        color: rgb(175, 175, 175);
-        display:flex;
-        align-items:center; 
-        margin-bottom: 10px;
-    }
-    .a2{
-        padding: 5px;
-        border-radius:50%;
-        text-decoration: none;
-        margin-bottom: 20px;
-        justify-content: center;
-    }
-    .github{
-        font-size: 23px;
-        padding: 5px;
-        color: rgb(175, 175, 175);
-        display:flex;
-        align-items:center; 
-    }
-    .linkedin{
-        font-size: 23px;
-        padding: 5px;
-        color: rgb(175, 175, 175);
-        display:flex;
-        align-items:center; 
-    }
-    .instagram{
-        font-size: 23px;
-        padding: 5px;
-        color: rgb(175, 175, 175);
-        display:flex;
-        align-items:center; 
-    }
-    .x{
-        color: aliceblue;
-        z-index: 2;
-    }
-    .botonera2{
-        display: flex;
-        align-items: center;
-        background: rgba(0, 0, 247, 0.474);
-        color:rgb(248, 248, 248);
-        width:100%;
-        height: 70px;
-        position:fixed;
-        justify-content: flex-end;
-        transition: 2s;
-
-    }
-    .burger{
-        margin-bottom: 5px;
-        right: 0;
-        height: 50px;
-    }
-    .botoncontainer{
-        height: 50px;
-    }
-    .burger .botoncontainer {
-        background: none;
-            cursor: pointer;
-            padding: 0;
-            border:none;
-            width: 50px;
-            outline: none;
-        }
-        .burger .botoncontainer span{
-            animation-fill-mode: forwards;
-            animation-duration: 2s;
-            border-radius: 5px;
-            background: white;
-            display: block;
-            border:none;
-            width: 60%;
-            margin: 5px auto;
-            height: 4px;
-        }
-        
-        .burger .botoncontainer .topline{
-            animation-name: top-line-animation-close;
-        }
-        .burger .botoncontainer .middleline{
-            animation-name: middle-line-animation-close;
-        }
-        .burger .botoncontainer .bottomline{
-            animation-name: bottom-line-animation-close;
-        }       
-        .burger .botoncontainer .topline2{
-            animation-name: top-line-animation;
-        }
-        .burger .botoncontainer .middleline2{
-            animation-name: middle-line-animation;
-        }
-        .burger .botoncontainer .bottomline2{
-            animation-name: bottom-line-animation;
-        }         
-
-        @keyframes top-line-animation{
-            50%, 100%{
-                margin: 0 auto;
-                width: 55%;
-                transform: translateY(5px) rotate(45deg);
-            }
-        }
-        @keyframes middle-line-animation{
-            20%, 100%{
-                margin: 0 auto;
-                transform: translateY(-2px) rotate(-45deg);
-                opacity: 0;
-            }
-        }
-        @keyframes bottom-line-animation{
-            50%, 100%{
-                margin: 0 auto;
-                float: top;
-                width: 55%;
-                transform: translateY(-2px) rotate(-45deg);
-            }
-        }
-        @keyframes top-line-animation-close{
-            50%, 100%{
-                transform: translateY(0px) rotate(180deg);
-            }
-        }
-        @keyframes middle-line-animation-close{
-            20%, 100%{
-                transform: translateY(0px) rotate(180deg);
-            }
-        }
-        @keyframes bottom-line-animation-close{
-            50%, 100%{
-                transform: translateY(0) rotate(0deg);
-            }
-        }
-        @media screen and (max-width: 460px){
-        .botonera2{
-            display: flex;
-            align-items: center;
-            background: rgba(0, 0, 247, 0.474);
-            color:rgb(248, 248, 248);
-            width:100%;
-            height: 70px;
-            position:fixed;
-            justify-content: flex-end;
-            transition: 2s;
-        }
-        .containerBurger{
-            background: rgba(4, 4, 239, 0.952);
-            display: flex;
-            height: 100%;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            margin-top:0px;
-            width: 100%;
-            position:fixed;
-        
-        }
-        .containerBurger2{
-            background: rgba(3, 3, 59, 0.952);
-            display: flex;
-            height: 100%;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            margin-top:0px;
-            width: 100%;
-            position:fixed;
-        
-        }
-        .botonBurger{
-            margin-top: 30px;
-        }
-        .redes{
-            margin-bottom: 30px;
-        }
-    }
+  }
 }
 
 /*           */
-

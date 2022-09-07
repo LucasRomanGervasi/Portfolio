@@ -1,12 +1,12 @@
-.scrollcontainer{
-    position: fixed;
-    top: 70;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    z-index: 3;
+.scrollcontainer {
+  position: fixed;
+  top: 70;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 3;
 }
-.scrollcontainer .indicator{
-    height: 100%;
-    background-color:rgb(0, 34, 255);
+.scrollcontainer .indicator {
+  height: 100%;
+  background-color: rgb(0, 34, 255);
 }
