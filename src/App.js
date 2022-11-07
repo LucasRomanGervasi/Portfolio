@@ -6,9 +6,9 @@ import ReadingProgress from './Components/ReadingProgress';
 import Home from "./Components/Home"
 import AboutMe from "./Components/AboutMe"
 import Contacts from './Components/Contacts'
-import Proyect from "./Components/Proyect"
-import FoodApp from "./Components/FoodApp"
-import RestoBook from "./Components/RestoBook"
+// import Proyect from "./Components/Proyect"
+// import FoodApp from "./Components/FoodApp"
+// import RestoBook from "./Components/RestoBook"
 import Nav from "./Components/Nav";
 import Skills from "./Components/Skills";
 import { BiArrowFromBottom } from "react-icons/bi";
@@ -50,7 +50,7 @@ import {useSelector} from "react-redux"
           </path></svg>
           </div>
           }
-    <div id="proyect" > <Proyect/> </div>
+    {/* <div id="proyect" > <Proyect/> </div> */}
     <div id="contacts"><Contacts/> </div> 
     </div>
   );
@@ -61,8 +61,8 @@ export default function App(){
   <BrowserRouter>
   <Routes>
     <Route path='/' element={<Inicio/>}/>
-    <Route exact path='/TodaysMenu' id="FoodApp" element={<FoodApp/>}/>
-    <Route exact path='/RestoBook' element={<RestoBook/>}/>
+    {/* <Route exact path='/TodaysMenu' id="FoodApp" element={<FoodApp/>}/>
+    <Route exact path='/RestoBook' element={<RestoBook/>}/> */}
   </Routes>
   </BrowserRouter>
   )

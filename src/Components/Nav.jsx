@@ -40,9 +40,9 @@ export default function Nav() {
         <a className={styles.boton} href="#tecnologias">
           HABILIDADES{" "}
         </a>
-        <a className={styles.boton} href="#proyect">
+        {/* <a className={styles.boton} href="#proyect">
           PROYECTOS
-        </a>
+        </a> */}
         <a className={styles.boton} href="#contacts">
           CONTACTO{" "}
         </a>
@@ -103,13 +103,13 @@ export default function Nav() {
             >
               HABILIDADES{" "}
             </a>
-            <a
+            {/* <a
               className={styles.botonBurger}
               onClick={() => setSohwMobileBurger(!showMobileBurger)}
               href="#proyect"
             >
               PROYECTOS
-            </a>
+            </a> */}
             <a
               className={styles.botonBurger}
               onClick={() => setSohwMobileBurger(!showMobileBurger)}
