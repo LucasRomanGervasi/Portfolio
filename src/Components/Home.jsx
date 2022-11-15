@@ -5,7 +5,9 @@ import styles from "./Home.module.css";
 import { FiDownload } from "react-icons/fi";
 import { useSelector } from "react-redux";
 
+
 export default function Home() {
+
   const darkMode = useSelector((state) => state.darkMode);
   return (
     <div className={styles.home}>
@@ -28,7 +30,7 @@ export default function Home() {
             <div className={styles.wrapper1}>
               <a
                 className={styles.a}
-                href="https://drive.google.com/file/d/1joIfXts-MCdJ0yE5P9vO8n1f_-bQQVT3/view?usp=sharing"
+                href="https://drive.google.com/file/d/1x16v1vXU_wvr4N956I74x2NS8N7FoAyq/view?usp=sharing"
               >
                 DESCARGAR CV{" "}
               </a>
@@ -36,11 +38,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.right}>
+         <div className={styles.right}>
           <div className={styles.imagenContainer}>
             <img className={styles.foto} src={perfil} />
           </div>
-        </div>
+        </div> 
       </div>
       <div
         className={darkMode ? styles.scrollcontainer2 : styles.scrollcontainer}

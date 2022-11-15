@@ -50,9 +50,9 @@ export default function AboutMe() {
                   .{" "}
                 </p>
                 <p className={styles.parrafo2}>
-                  Soy una persona comprometida y apasionado por lo que hago.
-                  Estoy en búsqueda de nuevos desafíos donde pueda desarrollarme
-                  como profesional y adquirir nuevos conocimientos.{" "}
+                  Me considero una persona positiva, adaptable, proactiva y responsable en mi trabajo.
+                  <br></br>
+                  Soy un entusiasta del deporte y la tecnología.{" "}
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function AboutMe() {
               <div className={styles.education}>
                 <Carrusel />
               </div>
-              <div className={styles.educationItems}>
+              {/* <div className={styles.educationItems}>
                 <p
                   className={styles.parrafo3}
                   style={
@@ -96,7 +96,7 @@ export default function AboutMe() {
                   Actualmente estudiante de la "Licenciatura en Ciencia de
                   Datos", en la Universidad Nacional de San Martin.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
