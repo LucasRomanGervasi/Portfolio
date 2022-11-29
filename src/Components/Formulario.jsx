@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import Confetti from "react-confetti";
 import perfil from "../img/perfilformulario.png";
-init("8pGs4U6nn-mwMRBjk");
+init("AXZli_M4WI-caiytq");
 const Result = () => {
   // if(result === "enviado"){
   return (
@@ -140,7 +140,7 @@ export default function Formulario() {
           "service_lhmycj9",
           "template_m3yg8gt",
           event.target,
-          "8pGs4U6nn-mwMRBjk"
+          "AXZli_M4WI-caiytq"
         )
         .then(
           (result) => {
